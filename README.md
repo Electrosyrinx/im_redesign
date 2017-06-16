@@ -7,6 +7,7 @@ Libraries include:
 * Font Awesome
 
 ### JavaScript
+Libraries include:
 * jQuery
 * Bootstrap 3
 
@@ -14,7 +15,7 @@ Libraries include:
 Fonts include:
 * Glyphicons
 * Font Awesome Icons
-TODO: Select fonts and modify css/main.css accordingly
+* TODO: Select fonts and modify css/main.css accordingly
 
 ### Partials
 These elements are loaded in js/main.js. There are partials for:
