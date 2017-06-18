@@ -9,6 +9,7 @@ Libraries include:
 ### JavaScript
 Libraries include:
 * jQuery
+* jQuery UI
 * Bootstrap 3
 
 ### Fonts
