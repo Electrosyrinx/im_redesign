@@ -31,6 +31,22 @@
   border-left: 1px solid lightgray;
 }
 
+.social:hover,
+.nav-item:hover {
+  color: white;
+  background-color: #377ab7;
+  -webkit-transition: color 2s, background-color 2s; /* Safari */
+  transition: color 2s, background-color 2s;
+}
+
+.social:hover a,
+.nav-item:hover a,
+.social:hover i,
+.nav-item:hover i {
+  color: white;
+  text-decoration: none;
+}
+
 .nav-item {
   width: 200px;
 }

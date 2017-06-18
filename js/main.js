@@ -56,7 +56,7 @@ function setResetInterval(bool, words) {
     rotate = setInterval(function () {
       $(".navbar-brand-words").hide();
       $(".navbar-brand-words").html(words[index]);
-      $(".navbar-brand-words").show("slide", { direction: "right" }, 300);
+      $(".navbar-brand-words").show("slide", { direction: "left" }, 300);
       index += 1;
       if (index > words.length) {
         index = 0;
