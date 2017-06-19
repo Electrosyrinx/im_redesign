@@ -155,9 +155,14 @@ main {
   }
 }
 
+@media (max-width: 420px){
+  /* Nav */
+  .navbar-brand {
+    font-size: 1em;
+  }
+}
 
-
-@media (max-width: 330px){
+@media (max-width: 370px){
   /* Nav */
   .navbar-brand {
     top: 0px;
