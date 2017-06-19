@@ -63,6 +63,20 @@
   width: 50px;
 }
 
+.small-icon {
+  font-size: 0.9em;
+  background-color:#377ab7;
+  color: white;
+  padding: 6px;
+  padding-bottom: 2px;
+  border-radius: 2px;
+}
+
+.dropdown-menu li:hover .small-icon {
+  background-color: white;
+  color: #377ab7 !important;
+}
+
 .blue-icon {
   color: #377ab7;
   font-size: 14px;
@@ -104,7 +118,7 @@
   transition: background-color 2s;
 }
 
-.dropdown-menu li:hover a {
+.dropdown-menu li:hover a, .dropdown-menu li:hover i {
   color: white !important;
   -webkit-transition: color 2s; /* Safari */
   transition: color 2s;
