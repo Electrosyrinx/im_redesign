@@ -4,11 +4,19 @@ $(document).ready(function(){
   loadMetas();
 
   // Load Navbar
-  if (window.matchMedia('(max-width: 420px)').matches) {
+  if (window.matchMedia('(max-width: 820px)').matches) {
     loadMobileBar();
   } else {
     loadDesktopBar();
   }
+
+  $(window).resize(function(){
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      loadMobileBar();
+    } else {
+      loadDesktopBar();
+    }
+  });
 
   // Load Footer
   // {Put footer loading code here}
