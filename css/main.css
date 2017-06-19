@@ -184,7 +184,15 @@ main {
   }
 
   /* Main Body */
+  body {
+    font-size: 1em;
+  }
+
   main {
     margin-top: 160px;
+  }
+
+  .dropdown-menu li a {
+    font-size: 0.7em !important;
   }
 }
