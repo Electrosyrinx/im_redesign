@@ -1,4 +1,7 @@
 /* Navbar Styles */
+a {
+  color: #0076b4;
+}
 .navbar {
   font-family: "Myriad Pro";
 }
@@ -31,10 +34,19 @@
   border-left: 1px solid lightgray;
 }
 
+.active {
+  background-color: #0076b4;
+}
+
+.active a,
+.active i {
+  color: white;
+}
+
 .social:hover,
 .nav-item:hover {
   color: white;
-  background-color: #377ab7;
+  background-color: #0076b4;
   -webkit-transition: color 2s, background-color 2s; /* Safari */
   transition: color 2s, background-color 2s;
 }
@@ -49,6 +61,7 @@
 
 .nav-item {
   width: 200px;
+  line-height: 15px;
 }
 
 .list-nav-item {
@@ -65,7 +78,7 @@
 
 .small-icon {
   font-size: 0.9em;
-  background-color:#377ab7;
+  background-color:#0076b4;
   color: white;
   padding: 6px;
   padding-bottom: 2px;
@@ -74,12 +87,12 @@
 
 .dropdown-menu li:hover .small-icon {
   background-color: white;
-  color: #377ab7 !important;
+  color: #0076b4 !important;
 }
 
 .blue-icon {
-  color: #377ab7;
-  font-size: 14px;
+  color: #0076b4;
+  font-size: 10px;
   margin-left: 6px;
 }
 
@@ -95,7 +108,7 @@
 .dropdown-menu {
   width: inherit;
   background-color: white;
-  color: #377ab7;
+  color: #0076b4;
   box-shadow: none;
   border-radius: 0px;
   border: none;
@@ -109,11 +122,11 @@
 }
 
 .dropdown-menu li a {
-  color: #377ab7 !important;
+  color: #0076b4 !important;
 }
 
 .dropdown-menu li:hover {
-  background-color: #377ab7;
+  background-color: #0076b4;
   -webkit-transition: background-color 2s; /* Safari */
   transition: background-color 2s;
 }
@@ -133,6 +146,16 @@
   background-image: none;
   background-color: transparent;
   text-decoration: none;
+}
+
+.dropdown-menu .active {
+  background-color: #0076b4;
+}
+
+.dropdown-menu .active a {
+  background-image: none;
+  background-color: transparent;
+  color: white !important;
 }
 
 
@@ -181,6 +204,14 @@ main {
     height: 30px;
     width: 30px;
     padding: 7px;
+  }
+
+  .nav-item {
+    line-height: 10px;
+  }
+
+  .blue-icon {
+    font-size: 6px;
   }
 
   /* Main Body */

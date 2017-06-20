@@ -31,6 +31,33 @@ $(document).ready(function(){
         $('.navbar-brand').hide();
       }
       setResetInterval(true, im_words);
+
+
+      // Add breadcrumb highlights to nav items:
+
+      // Change to http://www.nicinteractive.media/ pre-deployment
+      var WEBSITE_URL = "http://test.ians.studio/";
+      var current_location = window.location.href.replace(WEBSITE_URL,'');
+      console.log(current_location);
+      switch(window.location.href.replace(WEBSITE_URL,'')) {
+        case "how-we-made-this.html":
+            $(".how-we-made-this").addClass("active");
+            break;
+        case "what-we-do.html":
+            $(".what-we-do").addClass("active");
+            break;
+        case "students-alumni.html":
+            $(".students-alumni").addClass("active");
+            break;
+        case "faculty.html":
+            $(".faculty").addClass("active");
+            break;
+        case "current-students.html":
+            $(".current-students").addClass("active");
+            break;
+        default:
+            break;
+    }
     }
   });
 });
@@ -70,7 +97,7 @@ function setResetInterval(bool, words) {
         index = 0;
       }
       console.log("test!");
-    }, 3000);
+    }, 2000);
   } else {
     clearInterval(rotate);
   }
