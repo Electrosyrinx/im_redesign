@@ -47,14 +47,17 @@ $(document).ready(function(){
             $(".what-we-do").addClass("active");
             break;
         case "students-alumni.html":
+            $(".who-we-are").addClass("active-light")
             $(".students-alumni").addClass("active");
             $(".who-we-are").addClass("light-active");
             break;
         case "faculty.html":
+            $(".who-we-are").addClass("active-light");
             $(".faculty").addClass("active");
             $(".who-we-are").addClass("light-active");
             break;
         case "current-students.html":
+            $(".resources").addClass("active-light");
             $(".current-students").addClass("active");
             $(".resources").addClass("light-active");
             break;
