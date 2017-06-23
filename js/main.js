@@ -48,12 +48,15 @@ $(document).ready(function(){
             break;
         case "students-alumni.html":
             $(".students-alumni").addClass("active");
+            $(".who-we-are").addClass("light-active");
             break;
         case "faculty.html":
             $(".faculty").addClass("active");
+            $(".who-we-are").addClass("light-active");
             break;
         case "current-students.html":
             $(".current-students").addClass("active");
+            $(".resources").addClass("light-active");
             break;
         default:
             break;
