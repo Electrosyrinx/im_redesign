@@ -179,9 +179,30 @@ main {
   padding-top: 102px;
 }
 
+.scroll-element {
+  padding-top: 250px;
+}
+
+.scroll {
+  overflow-y: hidden;
+  color: #377ab7;
+  overflow: scroll;
+  font-size: 84px;
+  padding-top: 40px;
+  max-height: 600px;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
 main .container {
   border-right: 1px solid #e7e7e7;
   border-left: 1px solid #e7e7e7;
+}
+
+#im3 {
+  opacity: 0.2;
 }
 
 /* Media Query */
