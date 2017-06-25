@@ -217,6 +217,13 @@ main .container {
   }
 }
 
+/* Increase container width on large screens */
+@media (min-width: 1500px) {
+    .container{
+        max-width: 1398px;
+    }
+}
+
 @media (max-width: 820px){
   /* Nav */
   .nav-item, .list-nav-item {
