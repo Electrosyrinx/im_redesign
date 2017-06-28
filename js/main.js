@@ -1,17 +1,6 @@
 $(document).ready(function(){
   var im_words = ["CODE", "DESIGN", "NIC", "TECHNOLOGY", "PHOTOSHOP", "RUBY ON RAILS", "INSPIRED", "WEB DEVELOPMENT", "UNSTOPPABLE", "OBSESSED", "DETERMINED", "INTERACTIVE MEDIA"];
-  var im_main_words = [
-    "<p class='fadeIn'>Interactive Media</p>",
-    "<p class='flip'>Design</p>",
-    "<p class='bounceIn'>Code</p>",
-    "<p class='rubberBand'>Photoshop</p>",
-    "<p class='pulse'>Ruby on Rails</p>",
-    "<p class='shake'>JavaScript</p>",
-    "<p class='slideInRight'>Determined</p>",
-    "<p class='zoomIn'>Obssessed</p>"
-  ];
-
-  setResetIntervalMain(true, im_main_words);
+  
   // Load Metas
   loadMetas();
 
@@ -109,22 +98,6 @@ function setResetInterval(bool, words) {
       $(".navbar-brand-words").hide();
       $(".navbar-brand-words").html(words[index]);
       $(".navbar-brand-words").show("slide", { direction: "left" }, 300);
-      index += 1;
-      if (index > words.length) {
-        index = 0;
-      }
-    }, 2000);
-  } else {
-    clearInterval(rotate);
-  }
-}
-
-function setResetIntervalMain(bool, words) {
-  var index = 0;
-  if (bool) {
-    rotate = setInterval(function () {
-      $(".scroll").html(words[index]);
-      $(".scroll p").addClass("animated");
       index += 1;
       if (index > words.length) {
         index = 0;

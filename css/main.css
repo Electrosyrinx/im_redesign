@@ -37,6 +37,14 @@ a {
   border-top: 1px solid #e7e7e7;
 }
 
+.left-border {
+  border-left: 1px solid #e7e7e7;
+}
+
+.right-border {
+  border-right: 1px solid #e7e7e7;
+}
+
 .social, .nav-item, .list-nav-item {
   padding: 15px;
   height: 50px;
@@ -81,7 +89,7 @@ a {
 }
 
 .light-active {
-  background-color: lightblue;
+  background-color: #4faddd;
 }
 
 .list-nav-item {
