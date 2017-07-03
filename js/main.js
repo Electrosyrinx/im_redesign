@@ -22,7 +22,8 @@ $(document).ready(function(){
 
   /* MODALS! */
   /* Open the testModal */
-  $("#testModalBtn").click(function(){
+  $(".testModalBtn1").click(function(){
+    closeAllModals();
     // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       $("#testModal").css("width", "100%");
@@ -32,8 +33,32 @@ $(document).ready(function(){
     $("#testModal").css("opacity", "1");
   });
 
+  /* Open the testModal2 */
+  $(".testModalBtn2").click(function(){
+    closeAllModals();
+    // Responsive sizing
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#testModal2").css("width", "100%");
+    } else {
+      $("#testModal2").css("width", "inherit");
+    }
+    $("#testModal2").css("opacity", "1");
+  });
+
+  /* Open the testModal */
+  $(".testModalBtn3").click(function(){
+    closeAllModals();
+    // Responsive sizing
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#testModal3").css("width", "100%");
+    } else {
+      $("#testModal3").css("width", "inherit");
+    }
+    $("#testModal3").css("opacity", "1");
+  });
+
   // Open Modal on Modal
-  $("#testModalOnModalBtn").click(function(){
+  $(".testModalOnModalBtn").click(function(){
     // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       $("#testModalOnModal").css("width", "100%");
@@ -43,18 +68,47 @@ $(document).ready(function(){
     $("#testModalOnModal").css("opacity", "1");
   });
 
+  // Open Modal on Modal
+  $(".testModalOnModalBtn2").click(function(){
+    // Responsive sizing
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#testModalOnModal2").css("width", "100%");
+    } else {
+      $("#testModalOnModal2").css("width", "inherit");
+    }
+    $("#testModalOnModal2").css("opacity", "1");
+  });
+
+  // Open Modal on Modal
+  $(".testModalOnModalBtn3").click(function(){
+    // Responsive sizing
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#testModalOnModal3").css("width", "100%");
+    } else {
+      $("#testModalOnModal3").css("width", "inherit");
+    }
+    $("#testModalOnModal3").css("opacity", "1");
+  });
+
   /* Close/hide all modals */
+  function closeAllModals(){
+      $(".slide-modal").css("width", "0");
+      $(".slide-modal").css("opacity", "0");
+  }
+
   $(".modal-closebtn").click(function(){
-    $(".slide-modal").css("width", "0");
-    $(".slide-modal").css("opacity", "0");
+    closeAllModals();
   });
 
   /* Close/hide all modals on modals */
-  $(".modal-on-modal-closebtn").click(function(){
-    $(".modal-on-modal").css("width", "0");
-    $(".modal-on-modal").css("opacity", "0");
-  });
+  function closeSecondaryModals(){
+      $(".modal-on-modal").css("width", "0");
+      $(".modal-on-modal").css("opacity", "0");
+  }
 
+  $(".modal-on-modal-closebtn").click(function(){
+    closeSecondaryModals();
+  });
   // Load Footer
   // {Put footer loading code here}
 
