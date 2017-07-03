@@ -32,10 +32,27 @@ $(document).ready(function(){
     $("#testModal").css("opacity", "1");
   });
 
+  // Open Modal on Modal
+  $("#testModalOnModalBtn").click(function(){
+    // Responsive sizing
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#testModalOnModal").css("width", "100%");
+    } else {
+      $("#testModalOnModal").css("width", "inherit");
+    }
+    $("#testModalOnModal").css("opacity", "1");
+  });
+
   /* Close/hide all modals */
   $(".modal-closebtn").click(function(){
     $(".slide-modal").css("width", "0");
     $(".slide-modal").css("opacity", "0");
+  });
+
+  /* Close/hide all modals on modals */
+  $(".modal-on-modal-closebtn").click(function(){
+    $(".modal-on-modal").css("width", "0");
+    $(".modal-on-modal").css("opacity", "0");
   });
 
   // Load Footer
