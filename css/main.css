@@ -8,7 +8,7 @@ a {
 }
 
 .navbar {
-  font-family: "Myriad Pro";
+  font-family: 'Overpass', sans-serif;
 }
 
 .navbar-brand img {
@@ -90,6 +90,14 @@ a {
 
 .light-active {
   background-color: #4faddd;
+}
+
+.light-active a {
+  color: white;
+}
+
+.light-active a i {
+  color: white;
 }
 
 .list-nav-item {
@@ -184,24 +192,7 @@ a {
 
 /* Main Body */
 main {
-  padding-top: 102px;
-}
-
-.scroll-element {
-  padding-top: 250px;
-}
-
-.scroll {
-  overflow-y: hidden;
-  color: #377ab7;
-  overflow: scroll;
-  font-size: 84px;
-  padding-top: 40px;
-  max-height: 600px;
-}
-
-.scroll::-webkit-scrollbar {
-    display: none;
+  padding-top: 101px;
 }
 
 main .container {
@@ -211,6 +202,21 @@ main .container {
 
 #im3 {
   opacity: 0.2;
+}
+
+/* Modals */
+.slide-modal {
+    width: 0;
+    margin-left: -16px; /* Ignore parent padding */
+    height: 100%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    opacity: 0;
+    background-color: lightgray;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.8s; /* 0.5 second transition effect to slide in the slide-modal */
+    margin-top: 101px;
 }
 
 /* Media Query */
@@ -242,6 +248,11 @@ main .container {
   main {
     padding-top: 201px;
   }
+
+  .slide-modal {
+    margin-top: 201px;
+  }
+
 }
 
 @media (max-width: 420px){
@@ -287,6 +298,10 @@ main .container {
 
   main {
     padding-top: 160px;
+  }
+
+  .slide-modal {
+    margin-top: 160px;
   }
 
   .dropdown-menu li a {
