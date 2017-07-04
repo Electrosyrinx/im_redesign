@@ -20,6 +20,11 @@ $(document).ready(function(){
     }
   });
 
+  // Pnael Hover Animations
+  $(".panel").hover(function(){
+    $(".panel-info", this).toggleClass("panel-info-visible");
+  });
+
   /* MODALS! */
   /* Open the testModal */
   $(".testModalBtn1").click(function(){
@@ -166,8 +171,8 @@ function loadMobileBar() {
 }
 
 function loadMetas() {
-  var metas = loadPage('partials/metas.html');
-  $('head').prepend(metas);
+  var metas = 'partials/metas.html';
+  $('head').load(metas);
 }
 
 function loadPage(href)

@@ -214,8 +214,7 @@ main .container {
 }
 
 .panel {
-  height: 254px;
-  max-height: 254px;
+  height: 297px;
 }
 
 .title-panel {
@@ -227,11 +226,59 @@ main .container {
 .title-panel h3 {
   position: absolute;
   bottom: 0;
-  padding: 20px;
+  right: 0;
+  padding: 8px;
+  margin: 0px;
 }
 
-.blue-title-panel {
+.panel-info {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  color: white;
+  padding: 8px 0px;
+  font-size: 1.5em;
+  width: 0px;
+  transition: .8s;
+  -webkit-transition: .8s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.panel-info-visible {
+  padding: 8px 15px;
+  width: auto;
+  transition: .8s;
+  -webkit-transition: .8s;
+}
+
+.blue-panel {
   background-color: #4faddd;
+}
+
+.blue-panel .title-panel-info {
+  color: #4faddd;
+}
+
+.green-panel {
+  background-color: #60b481;
+}
+
+.green-panel .title-panel-info {
+  color: #60b481;
+}
+
+.red-panel {
+  background-color: #ee4037;
+}
+
+.red-panel .title-panel-info {
+  color: #ee4037;
+}
+.title-panel-info {
+  bottom: auto;
+  top: 10px;
+  background-color: white;
 }
 
 /* Modals */
@@ -268,6 +315,10 @@ main .container {
     main .container {
       width: 1000px;
     }
+
+    .panel {
+      height: 254px;
+    }
   }
 }
 
@@ -293,12 +344,21 @@ main .container {
     margin-top: 201px;
   }
 
+  .panel {
+    max-height: 257px;
+  }
+
 }
 
 @media (max-width: 420px){
   /* Nav */
   .navbar-brand {
     font-size: 1em;
+  }
+
+  /* Main */
+  .panel {
+    max-height: 226px;
   }
 }
 
@@ -346,5 +406,9 @@ main .container {
 
   .dropdown-menu li a {
     font-size: 0.7em !important;
+  }
+
+  .panel {
+    max-height: 200px;
   }
 }
