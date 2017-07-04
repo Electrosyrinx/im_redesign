@@ -126,10 +126,9 @@ $(document).ready(function(){
       // Add breadcrumb highlights to nav items:
 
       // Change to http://www.nicinteractive.media/ pre-deployment
-      var WEBSITE_URL = "http://localhost:8080/";
+      var WEBSITE_URL = "http://test.ians.studio/";
       var current_location = window.location.href.replace(WEBSITE_URL,'');
-      console.log(current_location);
-      switch(window.location.href.replace(WEBSITE_URL,'')) {
+      switch(current_location) {
         case "how-we-made-this.html":
             $(".how-we-made-this").addClass("active");
             break;

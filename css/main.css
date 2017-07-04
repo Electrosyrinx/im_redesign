@@ -204,6 +204,36 @@ main .container {
   opacity: 0.2;
 }
 
+.panel, .panel h3 {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  border-width: 0px;
+}
+
+.panel {
+  height: 254px;
+  max-height: 254px;
+}
+
+.title-panel {
+  color: white;
+  border: 0;
+  border-radius: 0px;
+}
+
+.title-panel h3 {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+
+.blue-title-panel {
+  background-color: #4faddd;
+}
+
 /* Modals */
 .slide-modal, .modal-on-modal {
     width: 0;
@@ -233,6 +263,10 @@ main .container {
     .navbar .container {
       margin: 0px auto;
       padding: 0px;
+    }
+
+    main .container {
+      width: 1000px;
     }
   }
 }
