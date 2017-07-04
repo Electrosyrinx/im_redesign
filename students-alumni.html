@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Starter Template for Bootstrap 3.3.7</title>
+    <title>Who We Are | Students / Alumni | Interactive Media | North Island College</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--[if IE]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
   <body>
     <div id="navbar"></div>
     <main>
       <div class="container">
-        <div id="testModal" class="slide-modal">
-          <button class="modal-closebtn">Close Test Modal</button>
+        <div id="matt-boucher" class="slide-modal">
+          <button class="modal-closebtn btn"><i class="fa fa-window-close" aria-hidden="true"></i></button>
 
-          <button class="testModalBtn3">Open Previous Modal</button>
-          <button class="testModalBtn2">Open Next Modal</button>
+          <button class="prev-modal btn"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+          <button class="next-modal btn"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
           <h2>Success 1!</h2>
 
-          <button class="testModalOnModalBtn">Open Modal on Modal</button>
-        </div>
-        <div id="testModal2" class="slide-modal">
-          <button class="modal-closebtn">Close Test Modal</button>
+          <button class="matt-boucher-modal btn">Open Modal on Modal</button>
 
-          <button class="testModalBtn1">Open Previous Modal</button>
-          <button class="testModalBtn3">Open Next Modal</button>
+          <div id="matt-boucher-images" class="slide-modal modal-on-modal">
+            <button class="modal-on-modal-closebtn btn"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+            <h2>Big Success 1!</h2>
+          </div>
+        </div>
+        <div id="brittany-king" class="slide-modal">
+          <button class="modal-closebtn btn"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+
+          <button class="prev-modal btn"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+          <button class="next-modal btn"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
           <h2>Success 2!</h2>
 
-          <button class="testModalOnModalBtn2">Open Modal on Modal</button>
-        </div>
-        <div id="testModal3" class="slide-modal">
-          <button class="modal-closebtn">Close Test Modal</button>
+          <button class="brittany-king-modal btn">Open Modal on Modal</button>
 
-          <button class="testModalBtn2">Open Previous Modal</button>
-          <button class="testModalBtn1">Open Next Modal</button>
+          <div id="brittany-king-images" class="slide-modal modal-on-modal">
+            <button class="modal-on-modal-closebtn btn"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+            <h2>Big Success 2!</h2>
+          </div>
+        </div>
+        <div id="krista-mcallister" class="slide-modal">
+          <button class="modal-closebtn btn"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+
+          <button class="prev-modal btn"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+          <button class="next-modal btn"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
           <h2>Success 3!</h2>
 
-          <button class="testModalOnModalBtn3">Open Modal on Modal</button>
-        </div>
+          <button class="krista-mcallister-modal btn">Open Modal on Modal</button>
 
-        <div id="testModalOnModal" class="slide-modal modal-on-modal">
-          <button class="modal-on-modal-closebtn">Close Test Modal</button>
-          <h2>Big Success 1!</h2>
-        </div>
-
-        <div id="testModalOnModal2" class="slide-modal modal-on-modal">
-          <button class="modal-on-modal-closebtn">Close Test Modal</button>
-          <h2>Big Success 2!</h2>
-        </div>
-
-        <div id="testModalOnModal3" class="slide-modal modal-on-modal">
-          <button class="modal-on-modal-closebtn">Close Test Modal</button>
-          <h2>Big Success 3!</h2>
+          <div id="krista-mcallister-images" class="slide-modal modal-on-modal">
+            <button class="modal-on-modal-closebtn btn"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+            <h2>Big Success 3!</h2>
+          </div>
         </div>
         <!-- Use any element to open the slide-modal -->
-        <button class="testModalBtn1">Open Test Modal</button>
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
             <div class="row">
-              <div class="col-md-3 col-sm-6 col-xs-6 panel">
+              <div class="col-md-3 col-sm-6 col-xs-6 panel matt-boucher">
                 <img class="img-responsive blue-one" src="images/profile-modal-panel/blue1.png">
                 <p class="panel-info blue-panel">
                   Matt Boucher
@@ -67,13 +80,13 @@
                   Learn more
                 </p>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-6 panel">
+              <div class="col-md-3 col-sm-6 col-xs-6 panel brittany-king">
                 <img class="img-responsive blue-two" src="images/profile-modal-panel/blue2.png">
                 <p class="panel-info blue-panel">
                   Brittany King
                 </p>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-6 panel">
+              <div class="col-md-3 col-sm-6 col-xs-6 panel krista-mcallister">
                 <img class="img-responsive blue-three" src="images/profile-modal-panel/blue3.png">
                 <p class="panel-info blue-panel">
                   Krista McAllister

@@ -2,9 +2,6 @@ $(document).ready(function(){
   var im_words = ["CODE", "DESIGN", "NIC", "TECHNOLOGY", "PHOTOSHOP", "RUBY ON RAILS", "INSPIRED", "WEB DEVELOPMENT", "UNSTOPPABLE", "OBSESSED", "DETERMINED", "INTERACTIVE MEDIA"];
   var im_words_lowercase = ["code", "design", "north island", "technology", "photoshop", "ruby on rails", "inspired", "web development", "unstoppable", "obssessed", "determined", "interactive media"];
 
-  // Load Metas
-  loadMetas();
-
   // Load Navbar
   if (window.matchMedia('(max-width: 820px)').matches) {
     loadMobileBar();
@@ -20,79 +17,100 @@ $(document).ready(function(){
     }
   });
 
-  // Pnael Hover Animations
+  // Panel Hover Animations
   $(".panel").hover(function(){
     $(".panel-info", this).toggleClass("panel-info-visible");
   });
 
   /* MODALS! */
-  /* Open the testModal */
-  $(".testModalBtn1").click(function(){
+  $(".matt-boucher").click(function(){
     closeAllModals();
     // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#testModal").css("width", "100%");
+      $("#matt-boucher").css("width", "100%");
     } else {
-      $("#testModal").css("width", "inherit");
+      $("#matt-boucher").css("width", "inherit");
     }
-    $("#testModal").css("opacity", "1");
+    $("#matt-boucher").css("opacity", "1");
   });
 
-  /* Open the testModal2 */
-  $(".testModalBtn2").click(function(){
+  $(".brittany-king").click(function(){
     closeAllModals();
     // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#testModal2").css("width", "100%");
+      $("#brittany-king").css("width", "100%");
     } else {
-      $("#testModal2").css("width", "inherit");
+      $("#brittany-king").css("width", "inherit");
     }
-    $("#testModal2").css("opacity", "1");
+    $("#brittany-king").css("opacity", "1");
   });
 
-  /* Open the testModal */
-  $(".testModalBtn3").click(function(){
+  $(".krista-mcallister").click(function(){
     closeAllModals();
     // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#testModal3").css("width", "100%");
+      $("#krista-mcallister").css("width", "100%");
     } else {
-      $("#testModal3").css("width", "inherit");
+      $("#krista-mcallister").css("width", "inherit");
     }
-    $("#testModal3").css("opacity", "1");
+    $("#krista-mcallister").css("opacity", "1");
+  });
+
+  /* Move to next modal */
+  $(".next-modal").click(function(){
+    closeAllModals();
+    // Responsive sizing
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $(this).parent().next().css("width", "100%");
+    } else {
+      $(this).parent().next().css("width", "inherit");
+    }
+    $(this).parent().next().css("opacity", "1");
+  });
+
+  /* Move to previous modal */
+  $(".prev-modal").click(function(){
+    closeAllModals();
+    // Responsive sizing
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $(this).parent().prev().css("width", "100%");
+    } else {
+      $(this).parent().prev().css("width", "inherit");
+    }
+    $(this).parent().prev().css("opacity", "1");
   });
 
   // Open Modal on Modal
-  $(".testModalOnModalBtn").click(function(){
+  $(".matt-boucher-modal").click(function(){
     // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#testModalOnModal").css("width", "100%");
+      $("#matt-boucher-images").css("width", "100%");
     } else {
-      $("#testModalOnModal").css("width", "inherit");
+      $("#matt-boucher-images").css("width", "inherit");
     }
-    $("#testModalOnModal").css("opacity", "1");
+    $("#matt-boucher-images").css("opacity", "1");
   });
 
   // Open Modal on Modal
-  $(".testModalOnModalBtn2").click(function(){
+  $(".brittany-king-modal").click(function(){
     // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#testModalOnModal2").css("width", "100%");
+      $("#brittany-king-images").css("width", "100%");
     } else {
-      $("#testModalOnModal2").css("width", "inherit");
+      $("#brittany-king-images").css("width", "inherit");
     }
-    $("#testModalOnModal2").css("opacity", "1");
+    $("#brittany-king-images").css("opacity", "1");
   });
 
   // Open Modal on Modal
-  $(".testModalOnModalBtn3").click(function(){
+  $(".krista-mcallister-modal").click(function(){
     // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#testModalOnModal3").css("width", "100%");
+      $("#krista-mcallister-images").css("width", "100%");
     } else {
-      $("#testModalOnModal3").css("width", "inherit");
+      $("#krista-mcallister-images").css("width", "inherit");
     }
-    $("#testModalOnModal3").css("opacity", "1");
+    $("#krista-mcallister-images").css("opacity", "1");
   });
 
   /* Close/hide all modals */
@@ -168,11 +186,6 @@ function loadDesktopBar() {
 
 function loadMobileBar() {
   $('#navbar').load('partials/mobile-navigation.html');
-}
-
-function loadMetas() {
-  var metas = 'partials/metas.html';
-  $('head').load(metas);
 }
 
 function loadPage(href)

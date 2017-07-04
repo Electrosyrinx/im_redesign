@@ -3,6 +3,11 @@
   border-bottom: 1px solid #e7e7e7;
 }
 
+#navbar .navbar {
+  background-color: white;
+}
+
+
 a {
   color: #377ab7;
 }
@@ -196,6 +201,8 @@ main {
 }
 
 main .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
   border-right: 1px solid #e7e7e7;
   border-left: 1px solid #e7e7e7;
 }
@@ -204,6 +211,7 @@ main .container {
   opacity: 0.2;
 }
 
+/* Panels */
 .panel, .panel h3 {
   padding-left: 0px;
   padding-right: 0px;
@@ -215,6 +223,19 @@ main .container {
 
 .panel {
   height: 297px;
+  cursor: pointer;
+}
+
+.panel img {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  transition: 0.8s;
+}
+
+.panel:hover img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: 0.8s;
 }
 
 .title-panel {
@@ -282,6 +303,16 @@ main .container {
 }
 
 /* Modals */
+.btn .fa {
+  color: #377ab7;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  border-radius: 0px;
+}
+
 .slide-modal, .modal-on-modal {
     width: 0;
     margin-left: -16px; /* Ignore parent padding */
@@ -360,6 +391,10 @@ main .container {
   .panel {
     max-height: 226px;
   }
+
+  .panel h3 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 370px){
@@ -409,6 +444,6 @@ main .container {
   }
 
   .panel {
-    max-height: 200px;
+    max-height: 180px;
   }
 }
