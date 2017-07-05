@@ -221,7 +221,7 @@ main .container {
 }
 
 /* Panels */
-.panel, .panel h3 {
+.panel, .panel h3, .faculty-panel {
   padding-left: 0px;
   padding-right: 0px;
   margin-left: 0px;
@@ -230,7 +230,7 @@ main .container {
   border: none;
 }
 
-.panel {
+.panel, .faculty-panel {
   height: 296px;
   cursor: pointer;
 }
@@ -241,9 +241,21 @@ main .container {
   transition: 0.8s;
 }
 
+.faculty-panel img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: 0.8s;
+}
+
 .panel:hover img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+  transition: 0.8s;
+}
+
+.faculty-panel:hover img {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
   transition: 0.8s;
 }
 
@@ -282,6 +294,12 @@ main .container {
   -webkit-transition: .8s;
 }
 
+.faculty-panel .panel-info {
+  right: 0px;
+  left: auto;
+  bottom: 0px;
+}
+
 .blue-panel {
   background-color: #4faddd;
 }
@@ -305,6 +323,11 @@ main .container {
 .red-panel .title-panel-info {
   color: #ee4037;
 }
+
+.black-panel {
+  background: rgba(0,0,0,0.7);
+}
+
 .title-panel-info {
   bottom: auto;
   top: 30px;
