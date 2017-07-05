@@ -1,3 +1,16 @@
+/* Font Styles */
+.navbar {
+  font-family: 'Overpass', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Overpass', sans-serif;
+}
+
+.panel-info {
+  font-family: 'Overpass', sans-serif;
+}
+
 /* Navbar Styles */
 .navbar {
   border-bottom: 1px solid #e7e7e7;
@@ -10,10 +23,6 @@
 
 a {
   color: #377ab7;
-}
-
-.navbar {
-  font-family: 'Overpass', sans-serif;
 }
 
 .navbar-brand img {
@@ -218,11 +227,11 @@ main .container {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  border-width: 0px;
+  border: none;
 }
 
 .panel {
-  height: 297px;
+  height: 296px;
   cursor: pointer;
 }
 
@@ -240,7 +249,7 @@ main .container {
 
 .title-panel {
   color: white;
-  border: 0;
+  border: none;
   border-radius: 0px;
 }
 
@@ -255,7 +264,7 @@ main .container {
 .panel-info {
   position: absolute;
   bottom: 10px;
-  right: 0px;
+  left: 0px;
   color: white;
   padding: 8px 0px;
   font-size: 1.5em;
@@ -298,7 +307,7 @@ main .container {
 }
 .title-panel-info {
   bottom: auto;
-  top: 10px;
+  top: 30px;
   background-color: white;
 }
 
@@ -348,7 +357,11 @@ main .container {
     }
 
     .panel {
-      height: 254px;
+      height: 253px;
+    }
+
+    .panel h3 {
+      font-size: 18px;
     }
   }
 }
@@ -376,9 +389,12 @@ main .container {
   }
 
   .panel {
-    max-height: 257px;
+    max-height: 256px;
   }
 
+  .panel h3 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 420px){
@@ -389,12 +405,9 @@ main .container {
 
   /* Main */
   .panel {
-    max-height: 226px;
+    max-height: 225px;
   }
 
-  .panel h3 {
-    font-size: 18px;
-  }
 }
 
 @media (max-width: 370px){
@@ -444,6 +457,6 @@ main .container {
   }
 
   .panel {
-    max-height: 180px;
+    max-height: 179px;
   }
 }

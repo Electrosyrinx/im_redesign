@@ -144,7 +144,7 @@ $(document).ready(function(){
       if (hideLogo){
         $('.navbar-brand').hide();
       }
-      setResetInterval(true, im_words);
+      // setResetInterval(true, im_words);
 
       // Add breadcrumb highlights to nav items:
 
