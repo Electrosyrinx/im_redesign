@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-a {
+a, a:hover {
   color: #377ab7;
 }
 
@@ -210,7 +210,7 @@ main {
 }
 
 main .container {
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 100px;
   border-right: 1px solid #e7e7e7;
   border-left: 1px solid #e7e7e7;
@@ -468,7 +468,7 @@ main .container {
   }
 
   main {
-    padding-top: 160px;
+    padding-top: 110px;
   }
 
   .slide-modal {
