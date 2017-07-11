@@ -56,6 +56,73 @@ $(document).ready(function(){
     $("#krista-mcallister").css("opacity", "1");
   });
 
+  // Info Page Modals
+  $(".lab-schedule").click(function(){
+    closeAllModals();
+    // Responsive sizing
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#lab-schedule-modal").css("width", "100%");
+    } else {
+      $("#lab-schedule-modal").css("width", "inherit");
+    }
+    $("#lab-schedule-modal").css("opacity", "1");
+  });
+
+  $(".print-shop").click(function(){
+    closeAllModals();
+    // Responsive sizing
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#print-shop-modal").css("width", "100%");
+    } else {
+      $("#print-shop-modal").css("width", "inherit");
+    }
+    $("#print-shop-modal").css("opacity", "1");
+  });
+
+  $(".equipment").click(function(){
+    closeAllModals();
+    // Responsive sizing
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#equipment-modal").css("width", "100%");
+    } else {
+      $("#equipment-modal").css("width", "inherit");
+    }
+    $("#equipment-modal").css("opacity", "1");
+  });
+
+  $(".tech-specs").click(function(){
+    closeAllModals();
+    // Responsive sizing
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#tech-specs-modal").css("width", "100%");
+    } else {
+      $("#tech-specs-modal").css("width", "inherit");
+    }
+    $("#tech-specs-modal").css("opacity", "1");
+  });
+
+  $(".ftp-access").click(function(){
+    closeAllModals();
+    // Responsive sizing
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#ftp-access-modal").css("width", "100%");
+    } else {
+      $("#ftp-access-modal").css("width", "inherit");
+    }
+    $("#ftp-access-modal").css("opacity", "1");
+  });
+
+  $(".important-info").click(function(){
+    closeAllModals();
+    // Responsive sizing
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#important-info-modal").css("width", "100%");
+    } else {
+      $("#important-info-modal").css("width", "inherit");
+    }
+    $("#important-info-modal").css("opacity", "1");
+  });
+
   /* Move to next modal */
   $(".next-modal").click(function(){
     closeAllModals();
