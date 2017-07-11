@@ -464,6 +464,11 @@ a:hover svg .cls-3 {
   .panel h3 {
     font-size: 18px;
   }
+
+  .info-icon {
+    padding: 25px;
+    padding-bottom: 0px;
+  }
 }
 
 @media (max-width: 420px){
@@ -527,5 +532,10 @@ a:hover svg .cls-3 {
 
   .panel {
     max-height: 179px;
+  }
+
+  .info-icon {
+    padding: 10px;
+    padding-bottom: 0px;
   }
 }
