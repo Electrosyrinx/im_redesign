@@ -258,6 +258,7 @@ a:hover svg .cls-3 {
 
 .info-icon {
   padding: 55px;
+  padding-bottom: 0px;
 }
 
  a:hover .info-label {
