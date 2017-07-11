@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a, a:hover {
   color: #377ab7;
+  text-decoration: none;
 }
 
 .navbar-brand img {
@@ -219,6 +220,50 @@ main .container {
 #im3 {
   opacity: 0.2;
 }
+
+/* Info Icons */
+.cls-1 {
+  fill: #377ab7;
+  transition: 0.8s;
+}
+
+.cls-2 {
+  fill: #fff;
+  transition: 0.8s;
+}
+
+.cls-3 {
+  fill: #4faddd;
+  transition: 0.8s;
+}
+
+a:hover svg .cls-1 {
+  fill: #4faddd;
+  transition: 0.8s;
+}
+
+a:hover svg .cls-2 {
+  fill: #fff;
+  transition: 0.8s;
+}
+
+a:hover svg .cls-3 {
+  fill: #377ab7;
+  transition: 0.8s;
+}
+
+.info-icon-container {
+  padding: 0px 70px;
+}
+
+.info-icon {
+  padding: 55px;
+}
+
+ a:hover .info-label {
+   color: #4faddd;
+   transition: 0.8s;
+ }
 
 /* Panels */
 .panel, .panel h3, .faculty-panel {
