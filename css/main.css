@@ -271,6 +271,7 @@ svg:hover + .info-label {
    transition: 0.8s;
  }
 
+
 /* Panels */
 .panel, .panel h3, .faculty-panel {
   padding-left: 0px;
@@ -471,12 +472,20 @@ svg:hover + .info-label {
   }
 
   .info-icon {
-    padding: 25px;
+    padding: 10px;
     padding-bottom: 0px;
   }
 
-  .info-icon-container {
-    padding: 0px 35px;
+  main .info-icon-container {
+    padding: 0px 0px;
+    padding-top: 25px;
+  }
+}
+
+/* Fix column shifting issue */
+@media (max-width: 560px){
+  .info-icon h3 {
+    font-size: 1.1em;
   }
 }
 
@@ -544,11 +553,12 @@ svg:hover + .info-label {
   }
 
   .info-icon {
-    padding: 20px;
+    padding: 10px;
     padding-bottom: 0px;
   }
 
-  .info-icon-container {
-    padding: 0px 10px;
+  main .info-icon-container {
+    padding: 0px 0px;
+    padding-top: 65px;
   }
 }
