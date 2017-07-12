@@ -259,6 +259,9 @@ svg:hover .cls-3 {
 .info-icon {
   padding: 55px;
   padding-bottom: 0px;
+}
+
+.info-icon svg {
   cursor: pointer;
 }
 
@@ -465,6 +468,7 @@ svg:hover + .info-label {
 
   .panel {
     max-height: 256px;
+    overflow: hidden;
   }
 
   .panel h3 {
@@ -476,7 +480,7 @@ svg:hover + .info-label {
     padding-bottom: 0px;
   }
 
-  main .info-icon-container {
+  main .info-icon-container .row {
     padding: 0px 0px;
     padding-top: 25px;
   }
@@ -557,7 +561,7 @@ svg:hover + .info-label {
     padding-bottom: 0px;
   }
 
-  main .info-icon-container {
+  main .info-icon-container .row {
     padding: 0px 0px;
     padding-top: 65px;
   }
