@@ -201,53 +201,55 @@ $(document).ready(function(){
   });
 
   // SVG Icon animations
-  var labSchedule = new SVGMorpheus('#lab-schedule');
-  $("#lab-schedule").hover(function(){
-      labSchedule.to('lab-schedule-hover', {
-        easing: 'sine-in-out',
-        duration: 800,
-        rotation: 'none'
-      });
-    },
-    function (){
-      labSchedule.to('lab-schedule-no-hover', {
-        easing: 'sine-in-out',
-        duration: 800,
-        rotation: 'none'
-      });
-  });
+  if (infoPage) { // Only load if on information page
+    var labSchedule = new SVGMorpheus('#lab-schedule');
+    $("#lab-schedule").hover(function(){
+        labSchedule.to('lab-schedule-hover', {
+          easing: 'sine-in-out',
+          duration: 800,
+          rotation: 'none'
+        });
+      },
+      function (){
+        labSchedule.to('lab-schedule-no-hover', {
+          easing: 'sine-in-out',
+          duration: 800,
+          rotation: 'none'
+        });
+    });
 
-  var importantInfo = new SVGMorpheus('#important-info');
-  $("#important-info").hover(function(){
-      importantInfo.to('important-info-hover', {
-        easing: 'sine-in-out',
-        duration: 800,
-        rotation: 'none'
-      });
-    },
-    function (){
-      importantInfo.to('important-info-no-hover', {
-        easing: 'sine-in-out',
-        duration: 800,
-        rotation: 'none'
-      });
-  });
+    var importantInfo = new SVGMorpheus('#important-info');
+    $("#important-info").hover(function(){
+        importantInfo.to('important-info-hover', {
+          easing: 'sine-in-out',
+          duration: 800,
+          rotation: 'none'
+        });
+      },
+      function (){
+        importantInfo.to('important-info-no-hover', {
+          easing: 'sine-in-out',
+          duration: 800,
+          rotation: 'none'
+        });
+    });
 
-  var techSpecs = new SVGMorpheus('#tech-specs');
-  $("#tech-specs").hover(function(){
-      techSpecs.to('tech-specs-hover', {
-        easing: 'sine-in-out',
-        duration: 800,
-        rotation: 'none'
-      });
-    },
-    function (){
-      techSpecs.to('tech-specs-no-hover', {
-        easing: 'sine-in-out',
-        duration: 800,
-        rotation: 'none'
-      });
-  });
+    var techSpecs = new SVGMorpheus('#tech-specs');
+    $("#tech-specs").hover(function(){
+        techSpecs.to('tech-specs-hover', {
+          easing: 'sine-in-out',
+          duration: 800,
+          rotation: 'none'
+        });
+      },
+      function (){
+        techSpecs.to('tech-specs-no-hover', {
+          easing: 'sine-in-out',
+          duration: 800,
+          rotation: 'none'
+        });
+    });
+  }
 
   // Manipulate navigation after it's loaded.
   // Any JS used to manipulate navigation should be written here
@@ -289,6 +291,28 @@ $(document).ready(function(){
     }
     }
   });
+
+  // Landing Page Animation Prototype 2 - Delete later if unapproved
+  // var svgMorpheus = new SVGMorpheus('#landing-animation');
+  // var icons = ['interactive-media', 'web-development', 'graphic-design', 'bleeding-edge'];
+  // var current = 0;
+  //
+  //
+  // function changeIcon() {
+  //
+  //   setTimeout(function() {
+  //     svgMorpheus.to(icons[current++ % icons.length], {
+  //       easing: 'sine-in-out',
+  //       duration: 800,
+  //       rotation: 'none'
+  //     });
+  //     changeIcon();
+  //   }, 3000);
+  // }
+  //
+  // if (hideLogo) {
+  //   changeIcon();
+  // }
 
 });
 
