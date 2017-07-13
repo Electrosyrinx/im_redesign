@@ -1,14 +1,22 @@
 $(document).ready(function(){
-  var im_words = ["CODE", "DESIGN", "NIC", "TECHNOLOGY", "PHOTOSHOP", "RUBY ON RAILS", "INSPIRED", "WEB DEVELOPMENT", "UNSTOPPABLE", "OBSESSED", "DETERMINED", "INTERACTIVE MEDIA"];
-  var im_words_lowercase = ["code", "design", "north island", "technology", "photoshop", "ruby on rails", "inspired", "web development", "unstoppable", "obssessed", "determined", "interactive media"];
 
   // Load Navbar
+  // This allows the developer to not have to constantly edit every single page
+  // every time the pesky designers and project managers tell them to change it.
+  // Did I say pesky? I meant perky. It was a typo. Yeah, perky!
+  // This if/else loads the desktop navbar if the device width is > 820px,
+  // otherwise it loads the mobile navbar.
   if (window.matchMedia('(max-width: 820px)').matches) {
     loadMobileBar();
   } else {
     loadDesktopBar();
   }
 
+  // If you're a critical designer or developer, you likely resized your browser
+  // to see how well we coded the website for various sizes. However, if you're
+  // on desktop and resize the navbar to mobile size, it will still display the
+  // desktop navbar. This code takes into account user re-sizing, and switches
+  // to the mobile navbar when the user makes the browser small enough.
   $(window).resize(function(){
     if (window.matchMedia('(max-width: 820px)').matches) {
       loadMobileBar();
@@ -18,15 +26,22 @@ $(document).ready(function(){
   });
 
   // Panel Hover Animations
+  // This turns the duotoned images on students-alumni.html into grayscale by
+  // toggling a class with the grayscale CSS rules.
+  // See section 3b. in css/main.css
   $(".panel").hover(function(){
     $(".panel-info", this).toggleClass("panel-info-visible");
   });
 
-  /* MODALS! */
+  /* Modals */
+  // Clicking the panel will close any presently open modals (if any) and then
+  // open the modal specified by the panel.
   $(".matt-boucher").click(function(){
     closeAllModals();
     // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
+      // When closed, the width of the modal is 0px, ie, invisible. When the
+      // width is increased, the modal becomes visible
       $("#matt-boucher").css("width", "100%");
     } else {
       $("#matt-boucher").css("width", "inherit");
@@ -36,7 +51,6 @@ $(document).ready(function(){
 
   $(".brittany-king").click(function(){
     closeAllModals();
-    // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       $("#brittany-king").css("width", "100%");
     } else {
@@ -47,7 +61,6 @@ $(document).ready(function(){
 
   $(".krista-mcallister").click(function(){
     closeAllModals();
-    // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       $("#krista-mcallister").css("width", "100%");
     } else {
@@ -59,7 +72,6 @@ $(document).ready(function(){
   // Info Page Modals
   $(".lab-schedule").click(function(){
     closeAllModals();
-    // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       $("#lab-schedule-modal").css("width", "100%");
     } else {
@@ -70,7 +82,6 @@ $(document).ready(function(){
 
   $(".print-shop").click(function(){
     closeAllModals();
-    // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       $("#print-shop-modal").css("width", "100%");
     } else {
@@ -81,7 +92,6 @@ $(document).ready(function(){
 
   $(".equipment").click(function(){
     closeAllModals();
-    // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       $("#equipment-modal").css("width", "100%");
     } else {
@@ -92,7 +102,6 @@ $(document).ready(function(){
 
   $(".tech-specs").click(function(){
     closeAllModals();
-    // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       $("#tech-specs-modal").css("width", "100%");
     } else {
@@ -103,7 +112,6 @@ $(document).ready(function(){
 
   $(".ftp-access").click(function(){
     closeAllModals();
-    // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       $("#ftp-access-modal").css("width", "100%");
     } else {
@@ -114,7 +122,6 @@ $(document).ready(function(){
 
   $(".important-info").click(function(){
     closeAllModals();
-    // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       $("#important-info-modal").css("width", "100%");
     } else {
@@ -126,7 +133,6 @@ $(document).ready(function(){
   /* Move to next modal */
   $(".next-modal").click(function(){
     closeAllModals();
-    // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       $(this).parent().next().css("width", "100%");
     } else {
@@ -180,30 +186,22 @@ $(document).ready(function(){
     $("#krista-mcallister-images").css("opacity", "1");
   });
 
-  /* Close/hide all modals */
-  function closeAllModals(){
-      $(".slide-modal").css("width", "0");
-      $(".slide-modal").css("opacity", "0");
-  }
-
+  // Modal close buttons
   $(".modal-closebtn").click(function(){
     closeAllModals();
   });
-
-  /* Close/hide all modals on modals */
-  function closeSecondaryModals(){
-      $(".modal-on-modal").css("width", "0");
-      $(".modal-on-modal").css("opacity", "0");
-  }
 
   $(".modal-on-modal-closebtn").click(function(){
     closeSecondaryModals();
   });
 
   // SVG Icon animations
+  // Some animations use the svg morpheus library
   if (infoPage) { // Only load if on information page
+    // Create new SVGMorpheus object
     var labSchedule = new SVGMorpheus('#lab-schedule');
     $("#lab-schedule").hover(function(){
+        // The .to method is from the svg-morpheus.js library
         labSchedule.to('lab-schedule-hover', {
           easing: 'sine-in-out',
           duration: 800,
@@ -233,22 +231,6 @@ $(document).ready(function(){
           rotation: 'none'
         });
     });
-
-    var techSpecs = new SVGMorpheus('#tech-specs');
-    $("#tech-specs").hover(function(){
-        techSpecs.to('tech-specs-hover', {
-          easing: 'sine-in-out',
-          duration: 800,
-          rotation: 'none'
-        });
-      },
-      function (){
-        techSpecs.to('tech-specs-no-hover', {
-          easing: 'sine-in-out',
-          duration: 800,
-          rotation: 'none'
-        });
-    });
   }
 
   // Manipulate navigation after it's loaded.
@@ -260,9 +242,6 @@ $(document).ready(function(){
       if (hideLogo){
         $('.navbar-brand').hide();
       }
-      // setResetInterval(true, im_words);
-
-      // Add breadcrumb highlights to nav items:
 
       // Change to http://www.nicinteractive.media/ pre-deployment
       var WEBSITE_URL = "http://test.ians.studio/";
@@ -334,19 +313,14 @@ function loadPage(href)
   return xmlhttp.responseText;
 }
 
-function setResetInterval(bool, words) {
-  var index = 0;
-  if (bool) {
-    rotate = setInterval(function () {
-      $(".navbar-brand-words").hide();
-      $(".navbar-brand-words").html(words[index]);
-      $(".navbar-brand-words").show("slide", { direction: "left" }, 300);
-      index += 1;
-      if (index > words.length) {
-        index = 0;
-      }
-    }, 2000);
-  } else {
-    clearInterval(rotate);
-  }
+/* Close/hide all modals */
+function closeAllModals(){
+    $(".slide-modal").css("width", "0");
+    $(".slide-modal").css("opacity", "0");
+}
+
+/* Close/hide all modals on modals */
+function closeSecondaryModals(){
+    $(".modal-on-modal").css("width", "0");
+    $(".modal-on-modal").css("opacity", "0");
 }

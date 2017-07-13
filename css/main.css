@@ -1,4 +1,24 @@
-/* Font Styles */
+/* * * * * * * * * * * * * * * * * * * * * * * * * */
+/* TABLE OF CONTENTS                               */
+/* ----------------------------------------------- */
+/* 1. Fonts                                        */
+/* 2. Navbar                                       */
+/* 3. Main Body                                    */
+/*   3a. Info Icons (for current-students.html)    */
+/*   3b. Panels (for students-alumni.html)         */
+/*   3c. Modals (for current-students.html,        */
+/*               faculty.html, what-we-do.html,    */
+/*               and students-alumni.html)         */
+/* 4. Footer                                       */
+/* 5. Media Queries – mobile first layout design   */
+/*   5a. Responsive fine-tuning                    */
+/*   5b. Greater than 1500px device width          */
+/*   5c. Up to 820px device width                  */
+/*   5d. Up to 420px device width                  */
+/*   5e. Up to 370px device width                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* 1. Font Styles */
 .navbar {
   font-family: 'Overpass', sans-serif;
 }
@@ -11,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Overpass', sans-serif;
 }
 
-/* Navbar Styles */
+/* 2. Navbar Styles */
 .navbar {
   border-bottom: 1px solid #e7e7e7;
 }
@@ -205,7 +225,7 @@ a, a:hover {
 }
 
 
-/* Main Body */
+/* 3. Main Body */
 main {
   padding-top: 101px;
 }
@@ -218,11 +238,7 @@ main .container {
   min-height: 100vh;
 }
 
-#im3 {
-  opacity: 0.2;
-}
-
-/* Info Icons */
+/* 3a. Info Icons */
 .cls-1 {
   fill: #377ab7;
   transition: 0.8s;
@@ -276,7 +292,7 @@ svg:hover + .info-label {
  }
 
 
-/* Panels */
+/* 3b. Panels */
 .panel, .panel h3, .faculty-panel {
   padding-left: 0px;
   padding-right: 0px;
@@ -390,7 +406,7 @@ svg:hover + .info-label {
   background-color: white;
 }
 
-/* Modals */
+/* 3c. Modals */
 .btn .fa {
   color: #377ab7;
 }
@@ -421,7 +437,15 @@ svg:hover + .info-label {
   color: white;
 }
 
-/* Media Query */
+/* 4. Footer */
+
+
+/* 5. Media Query */
+/* Media queries target specific devices based on their features, including
+   the size of their screen. The following media queries adjust styles for
+   a "mobile first" layout design. */
+
+/* 5a. Responsive Fine-tuning */
 /* This first one fixes a weird Bootstrap bug
 (or a bug in this CSS that couldn't be found) */
 @media (max-width: 1200px){
@@ -445,6 +469,14 @@ svg:hover + .info-label {
   }
 }
 
+/* Fix column shifting issue with current-students.html */
+@media (max-width: 560px){
+  .info-icon h3 {
+    font-size: 1.1em;
+  }
+}
+
+/* 5b. Greater Than 1500px device width */
 /* Increase container width on large screens */
 @media (min-width: 1500px) {
     .container{
@@ -452,6 +484,7 @@ svg:hover + .info-label {
     }
 }
 
+/* 5c. Up to 820px device width */
 @media (max-width: 820px){
   /* Nav */
   .nav-item, .list-nav-item {
@@ -487,13 +520,7 @@ svg:hover + .info-label {
   }
 }
 
-/* Fix column shifting issue */
-@media (max-width: 560px){
-  .info-icon h3 {
-    font-size: 1.1em;
-  }
-}
-
+/* 5d. Up to 420px device width */
 @media (max-width: 420px){
   /* Nav */
   .navbar-brand {
@@ -507,6 +534,7 @@ svg:hover + .info-label {
 
 }
 
+/* 5e. Up to 370px device width */
 @media (max-width: 370px){
   /* Nav */
   .navbar-brand {
