@@ -467,16 +467,36 @@ svg:hover + .info-label {
   background-color: #4faddd;
 }
 
+.faq-light-blue-panel:hover {
+  background-color: #1185d9;
+  transition: 0.8s;
+}
+
 .faq-yellow-panel {
    background-color: #f7f126;
 }
 
+.faq-yellow-panel:hover {
+  background-color: #e7f02d;
+  transition: 0.8s;
+}
+
 .faq-red-panel {
+  background-color: #ee4037;
+}
+
+.faq-red-panel:hover {
   background-color: #cc3333;
+  transition: 0.8s;
 }
 
 .faq-green-panel {
   background-color: #8dc73f;
+}
+
+.faq-green-panel:hover {
+  background-color: #8dc73f;
+  transition: 0.8s;
 }
 
 /* Uniform columns using flex */
@@ -490,12 +510,60 @@ svg:hover + .info-label {
   flex-direction: column;
 }
 
-.sub-rows .row {
-  height: 100%;
+.primary-sub-row .row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.sub-rows .row .col-md-12 {
-  height: 50%;
+.primary-sub-row .row [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+#fj-panel {
+  height:66.666666666%;
+  position: relative;
+}
+
+@media (max-width: 992px){
+  .sub-rows .row #fj-panel {
+    height: 100%;
+  }
+
+  .sub-rows .row .javascript-panel {
+    height: 100%;
+  }
+}
+
+@media (min-width: 767px){
+  .sub-rows .row {
+    height: 100%;
+  }
+
+  .sub-rows .row .col-md-12 {
+    height: 50%;
+  }
+
+  .sub-rows .row .javascript-panel {
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .sub-rows .row .javascript-panel {
+    height: 33.333333%;
+  }
+}
+
+@media (max-width: 767px){
+  .empty-panel {
+    min-height: 150px;
+  }
+
+  .sub-rows .row .javascript-panel {
+    min-height: 150px;
+    max-height: 25%;
+  }
 }
 /* End uniform columns */
 
@@ -541,6 +609,8 @@ svg:hover + .info-label {
 
 .faq-panel svg {
   position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .faq-panel svg g rect {
