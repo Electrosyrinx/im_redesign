@@ -233,6 +233,46 @@ $(document).ready(function(){
     });
   }
 
+  var bigFJs = $(".big-fj");
+  var smallFJs = $(".small-fj");
+  var visibleFJs = (".visible-fj");
+  var bigAttributes = [];
+  var smallAttributes = [];
+
+
+  function getAttrs(element){
+    x = $(element).attr("x");
+    y = $(element).attr("y");
+    width = $(element).attr("width");
+    height = $(element).attr("height");
+
+    return [x, y, width, height];
+  }
+
+  for (i = 0; i < bigFJs.length; i++){
+    bigAttributes.push(getAttrs($(bigFJs[i])));
+  }
+
+  for (i = 0; i < smallFJs.length; i++){
+    smallAttributes.push(getAttrs(smallFJs[i]));
+  }
+
+  $("#fj-panel").hover(function(){
+    for (i = 0; i < smallFJs.length; i++){
+      $(smallFJs[i]).attr("x", bigAttributes[i][0]);
+      $(smallFJs[i]).attr("y", bigAttributes[i][1]);
+      $(smallFJs[i]).attr("width", bigAttributes[i][2]);
+      $(smallFJs[i]).attr("height", bigAttributes[i][3]);
+    }
+  }, function(){
+    for (i = 0; i < smallFJs.length; i++){
+      $(smallFJs[i]).attr("x", smallAttributes[i][0]);
+      $(smallFJs[i]).attr("y", smallAttributes[i][1]);
+      $(smallFJs[i]).attr("width", smallAttributes[i][2]);
+      $(smallFJs[i]).attr("height", smallAttributes[i][3]);
+    }
+  });
+
   // Manipulate navigation after it's loaded.
   // Any JS used to manipulate navigation should be written here
   $.ajax({
@@ -270,29 +310,6 @@ $(document).ready(function(){
     }
     }
   });
-
-  // Landing Page Animation Prototype 2 - Delete later if unapproved
-  // var svgMorpheus = new SVGMorpheus('#landing-animation');
-  // var icons = ['interactive-media', 'web-development', 'graphic-design', 'bleeding-edge'];
-  // var current = 0;
-  //
-  //
-  // function changeIcon() {
-  //
-  //   setTimeout(function() {
-  //     svgMorpheus.to(icons[current++ % icons.length], {
-  //       easing: 'sine-in-out',
-  //       duration: 800,
-  //       rotation: 'none'
-  //     });
-  //     changeIcon();
-  //   }, 3000);
-  // }
-  //
-  // if (hideLogo) {
-  //   changeIcon();
-  // }
-
 });
 
 // Functions

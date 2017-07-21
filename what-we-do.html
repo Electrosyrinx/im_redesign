@@ -21,16 +21,87 @@
   <body>
     <div id="navbar"></div>
     <main>
-      <div class="container">
-        <div class="starter-template">
-          <h1>Hello, world!</h1>
-          <p class="lead">Now you can start your own project with <a target="_blank" href="http://getbootstrap.com/">Bootstrap 3.3.7</a>. This plugin is a fork from <a href="https://github.com/le717/brackets-html-skeleton#readme">HTML Skeleton</a>.</p>
+      <div class="container faq-container">
+        <div class="row">
+          <div class="col-md-4 text-right col-md-offset-1 faq-panel" style="background-image:url(images/faq/type_hover.png);">
+            <h3>typography</h3>
+            <img class="img-responsive" src="images/faq/type.png" />
+          </div>
+          <div class="col-md-2 text-right faq-panel faq-light-blue-panel">
+            <h3>ux design</h3>
+
+          </div>
+          <div class="col-md-4 text-left faq-panel" style="background-image:url(images/faq/html_hover.png);">
+            <h3>html / css</h3>
+            <img class="img-responsive" src="images/faq/html.png" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-1">
+            <div class="row">
+              <div class="col-md-4 text-right faq-panel faq-light-blue-panel">
+                <h3>iOS / android</h3>
+              </div>
+              <div class="col-md-8 text-right faq-panel text-black" style="background-image:url(images/faq/bottle_hover.png);">
+                <h3>package<br />design</h3>
+                <img class="img-responsive" src="images/faq/bottle.png" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 text-right faq-panel text-black" style="background-image:url(images/faq/adobe_hover.jpg);">
+                <h3>adobe creative cloud</h3>
+                <img class="img-responsive" src="images/faq/adobe.jpg" />
+              </div>
+              <div class="col-md-4 sub-rows">
+                <div class="row">
+                  <div class="col-md-12 text-right faq-panel faq-red-panel">
+                    <h3>ruby / php / sql</h3>
+                  </div>
+                  <div class="col-md-12 text-right faq-panel faq-yellow-panel text-black">
+                    <h3>project<br />management</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 sub-rows">
+            <div class="row">
+              <div id="fj-panel" class="col-md-12 text-right faq-panel faq-light-blue-panel" style="height:66.666666666%;background-image:url(images/faq/fj-hover.png)">
+                <h3>graphic design</h3>
+                <img class="img-responsive" src="images/faq/fj.png" />
+                <svg id="fj-logo" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1007 1248">
+                  <title>fj</title>
+                  <g display="none" id="big-fj">
+                    <rect class="big-fj" x="191.09" y="292.66" width="611.77" height="611.77" style="fill: #ef4137"/>
+                    <rect class="big-fj" x="262.02" y="364.38" width="295" height="117" style="fill: #fff"/>
+                    <rect class="big-fj" x="262.02" y="481.38" width="112" height="362" style="fill: #fff"/>
+                    <rect class="big-fj" x="374.02" y="545.38" width="183" height="116" style="fill: #fff"/>
+                    <rect class="big-fj" x="440.02" y="727.38" width="294" height="116" style="fill: #fff"/>
+                    <rect class="big-fj" x="624.02" y="364.38" width="110" height="363" style="fill: #fff"/>
+                  </g>
+                  <g id="small-fj">
+                    <rect class="small-fj" x="233.1" y="585.58" width="69.51" height="69.51" style="fill: #ef4137"/>
+                    <rect class="small-fj" x="241.16" y="593.72" width="33.52" height="13.29" style="fill: #fff"/>
+                    <rect class="small-fj" x="241.16" y="607.02" width="12.73" height="41.13" style="fill: #fff"/>
+                    <rect class="small-fj" x="253.89" y="614.29" width="20.79" height="13.18" style="fill: #fff"/>
+                    <rect class="small-fj" x="261.39" y="634.97" width="33.41" height="13.18" style="fill: #fff"/>
+                    <rect class="small-fj" x="282.3" y="593.72" width="12.5" height="41.25" style="fill: #fff"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="col-md-12 text-right faq-panel faq-green-panel" style="height:33.3333333%;">
+                <h3>javascript</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <footer></footer>
     <script>
       var hideLogo = false;
+      var faqPage = true;
+      var infoPage = false;
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script
@@ -38,6 +109,7 @@
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
     crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/svg-morpheus.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
