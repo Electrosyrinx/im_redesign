@@ -54,6 +54,13 @@ a, a:hover {
   text-decoration: none;
 }
 
+.navbar .nav-item a, .navbar .social a {
+  padding: 15px;
+  display: inherit;
+  height: 100%;
+  width: 100%;
+}
+
 .navbar-brand img {
   height: 50px;
   display: inline;
@@ -89,7 +96,6 @@ a, a:hover {
 }
 
 .social, .nav-item, .list-nav-item {
-  padding: 15px;
   height: 50px;
   display: inline;
   float: right;
@@ -339,7 +345,7 @@ svg:hover .cls-light-blue {
   padding: 0px 70px;
 }
 
-.info-icon {
+.info-icon, .faculty-panel {
   padding-bottom: 0px;
   overflow: hidden;
 }
@@ -374,11 +380,31 @@ svg:hover + .info-label {
   margin-right: 0px;
   margin-bottom: 0px;
   border: none;
+  color: white;
+}
+
+.faculty-panel .panel-info {
+  font-weight: 200;
 }
 
 .panel, .faculty-panel, .info-icon {
   height: 296px;
   cursor: pointer;
+}
+
+.faculty-panel .overlay {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.faculty-panel {
+  opacity: 1;
+}
+
+.faculty-panel:hover {
+  transition: 0.8s;
+  opacity: 0.85;
 }
 
 .panel img {
@@ -387,23 +413,13 @@ svg:hover + .info-label {
   transition: 0.8s;
 }
 
-.faculty-panel img {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-  transition: 0.8s;
-  opacity: 0.85;
-  background-color: white;
+.faculty-panel .panel-info {
+  margin-bottom: 0px;
 }
 
 .panel:hover img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-  transition: 0.8s;
-}
-
-.faculty-panel:hover img {
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
   transition: 0.8s;
 }
 
@@ -423,6 +439,10 @@ svg:hover + .info-label {
   margin: 0px;
   opacity: 1;
   transition: 0.8s;
+}
+
+.title-panel h3 {
+  font-weight: 200;
 }
 
 .info-icon h3 {
@@ -762,11 +782,11 @@ background-color: #4faddd;
       width: 1000px;
     }
 
-    .panel, .info-icon {
+    .panel, .info-icon, .faculty-panel {
       height: 253px;
     }
 
-    .panel h3 {
+    .panel h3, .faculty-panel .panel-info {
       font-size: 18px;
     }
   }
@@ -803,9 +823,9 @@ background-color: #4faddd;
     margin-top: 201px;
   }
 
-  .panel, .info-icon {
-    max-height: 256px;
+  .panel, .info-icon, .faculty-panel {
     overflow: hidden;
+    max-height: 243px;
   }
 
   .panel h3 {
@@ -831,8 +851,8 @@ background-color: #4faddd;
   }
 
   /* Main */
-  .panel, .info-icon {
-    max-height: 225px;
+  .panel, .info-icon, .faculty-panel {
+    max-height: 205px;
   }
 
 }
@@ -884,7 +904,7 @@ background-color: #4faddd;
     font-size: 0.7em !important;
   }
 
-  .panel, .info-icon {
+  .panel, .info-icon, .faculty-panel {
     max-height: 179px;
   }
 

@@ -284,24 +284,23 @@ $(document).ready(function(){
       }
 
       // Change to http://www.nicinteractive.media/ pre-deployment
-      var WEBSITE_URL = "http://test.ians.studio/";
-      var current_location = window.location.href.replace(WEBSITE_URL,'');
+      var current_location = window.location.pathname;
       switch(current_location) {
-        case "how-we-made-this.html":
+        case "/how-we-made-this.html":
             $(".how-we-made-this").addClass("active");
             break;
-        case "what-we-do.html":
+        case "/index.html":
             $(".what-we-do").addClass("active");
             break;
-        case "students-alumni.html":
+        case "/students-alumni.html":
             $(".who-we-are").addClass("light-active");
             $(".students-alumni").addClass("active");
             break;
-        case "faculty.html":
+        case "/faculty.html":
             $(".who-we-are").addClass("light-active");
             $(".faculty").addClass("active");
             break;
-        case "current-students.html":
+        case "/current-students.html":
             $(".resources").addClass("light-active");
             $(".current-students").addClass("active");
             break;
