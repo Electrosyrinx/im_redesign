@@ -1,0 +1,26 @@
+/* To compile (command line):
+$ cd path/to/sass/folder
+$ sass main.scss main.css
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Overpass:200,400,700,900');
+@import "font-awesome/font-awesome";
+@import "helpers/colours";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "components/font-styles";
+@import "components/navbar";
+@import "layouts/main-layout";
+@import "layouts/panels";
+@import "layouts/modals";
+@import "pages/current-students";
+@import "pages/faculty";
+@import "pages/students-alumni";
+@import "pages/what-we-do";
+/* Be mindful of load order, especially here */
+@import "layouts/responsive-gt-1500";
+@import "layouts/responsive-lt-1200";
+@import "layouts/responsive-lt-820";
+@import "layouts/responsive-lt-560";
+@import "layouts/responsive-lt-420";
+@import "layouts/responsive-lt-370";

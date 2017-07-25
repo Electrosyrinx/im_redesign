@@ -1,0 +1,18 @@
+$font_sans: 'Overpass', sans-serif;
+$font_serif: 'Crimson Text', serif;
+
+/* Font weights available in Crimson Text */
+$serif_regular: 400;
+$serif_bold: 600;
+
+/* Font weights available in Overpass */
+$sans_light: 200;
+$sans_regular: 400;
+$sans_bold: 700;
+$sans_black: 900;
+
+/* Borders */
+$border: 1px solid $light_gray;
+
+/* Transitions */
+$standard-transition: 0.8s;

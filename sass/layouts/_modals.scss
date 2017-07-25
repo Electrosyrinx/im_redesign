@@ -1,0 +1,31 @@
+
+
+.btn .fa {
+  color: $dark_blue;
+}
+
+.btn {
+  background-color: $white;
+  border: $border;
+  border-radius: 0px;
+}
+
+.slide-modal, .modal-on-modal {
+    width: 0;
+    margin-left: -16px; /* Ignore parent padding */
+    height: 100%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    opacity: 0;
+    background-color: $white;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.8s; /* 0.5 second transition effect to slide in the slide-modal */
+    margin-top: 101px;
+    padding: 0px 15px;
+}
+
+.modal-on-modal {
+  background-color: $dark_blue;
+  color: $white;
+}

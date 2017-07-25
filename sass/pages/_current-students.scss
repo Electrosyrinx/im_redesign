@@ -1,0 +1,92 @@
+
+/* Colors for info page icons */
+
+.cls-green {
+  fill: $dark_green;
+}
+
+.cls-blue {
+  fill: $dark_blue;
+}
+
+.cls-red {
+  fill: $light_red;
+}
+
+.cls-none {
+  fill: none;
+}
+
+.cls-white {
+  fill: $white;
+}
+
+.cls-light-blue {
+  fill: $light_blue;
+}
+
+/* Hovering */
+
+.info-icon:hover .red-svg .cls-red {
+  fill: $dark_red;
+  transition: $standard-transition;
+}
+
+.info-icon.red-panel:hover {
+  background-color: $dark_red;
+  transition: $standard-transition;
+}
+
+.info-icon:hover .blue-svg .cls-light-blue {
+  fill: $dark_blue;
+  transition: $standard-transition;
+}
+
+.info-icon.light-blue-panel:hover {
+  background-color: $dark_blue;
+  transition: $standard-transition;
+}
+
+.info-icon:hover .green-svg .cls-green {
+  fill: $light_green;
+  transition: $standard-transition;
+}
+
+.info-icon.green-panel:hover {
+  background-color: $light_green;
+  transition: $standard-transition;
+}
+
+.info-icon:hover svg .cls-white {
+  fill: $white;
+}
+
+.info-icon-container .row {
+  padding: 0px 70px;
+}
+
+.info-icon {
+  padding-bottom: 0px;
+  overflow: hidden;
+}
+
+.info-icon svg {
+  cursor: pointer;
+  margin-top: 25px;
+  height: 75%;
+  margin-left: -50px;
+}
+
+.info-label {
+  color: $white;
+}
+
+svg:hover + .info-label {
+   color: $light_blue;
+   transition: $standard-transition;
+ }
+
+.info-icon svg:hover + .info-label {
+  color: $white;
+  transition: $standard-transition;
+}
