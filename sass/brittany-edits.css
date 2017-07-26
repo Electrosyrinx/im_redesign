@@ -1,0 +1,16 @@
+ul {
+    padding-left: inherit;
+}
+
+.faculty-background {
+	font-size: 1.1em;
+}
+
+hr {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.teaching {
+	margin-bottom: 25px;
+}

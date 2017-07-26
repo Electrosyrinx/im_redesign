@@ -1,0 +1,60 @@
+@media (max-width: 370px){
+  /* Nav */
+  .navbar-brand {
+    top: 0px;
+    left: 0px;
+  }
+
+  .navbar-brand img {
+    height: 35px;
+  }
+
+  .fa {
+    font-size: 12px;
+  }
+
+  .social {
+    height: 30px;
+    width: 30px;
+    padding: 7px;
+  }
+
+  .nav-item {
+    line-height: 10px;
+  }
+
+  .blue-icon {
+    font-size: 6px;
+  }
+
+  /* Main Body */
+  body {
+    font-size: 1em;
+  }
+
+  main {
+    padding-top: 110px;
+  }
+
+  .slide-modal {
+    margin-top: 160px;
+  }
+
+  .dropdown-menu li a {
+    font-size: 0.7em !important;
+  }
+
+  .panel, .info-icon, .faculty-panel {
+    max-height: 179px;
+  }
+
+  .info-icon {
+    padding: 10px;
+    padding-bottom: 0px;
+  }
+
+  main .info-icon-container .row {
+    padding: 0px 0px;
+    padding-top: 65px;
+  }
+}

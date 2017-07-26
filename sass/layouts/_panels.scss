@@ -1,0 +1,358 @@
+.panel {
+  overflow: hidden;
+  border-radius: 0px;
+}
+
+.panel, .panel h3, .faculty-panel {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  border: none;
+  color: $white;
+}
+
+.faculty-panel .panel-info {
+  font-weight: $sans-light;
+}
+
+.panel, .faculty-panel, .info-icon {
+  height: 296px;
+  cursor: pointer;
+}
+
+.faculty-panel {
+  opacity: 1;
+}
+
+.faculty-panel:hover {
+  transition: $standard-transition;
+  opacity: 0.85;
+}
+
+.faculty-panel .panel-info {
+  margin-bottom: 0px;
+}
+
+.title-panel {
+  color: $white;
+  border: none;
+  border-radius: 0px;
+  position: relative;
+}
+
+.title-panel h3, .info-label, .info-icon h3 {
+  position: absolute;
+  font-size: 1.4em;
+  bottom: 0;
+  right: 0;
+  padding: 8px;
+  margin: 0px;
+  opacity: 1;
+  transition: $standard-transition;
+}
+
+.title-panel h3 {
+  font-weight: $sans-light;
+}
+
+.info-icon h3 {
+  color: $white;
+}
+
+.title-panel:hover h3 {
+  opacity: 0;
+  transition: $standard-transition;
+}
+
+.panel-info {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  color: $white;
+  padding: 8px 0px;
+  font-size: 1.5em;
+  width: 0px;
+  transition: .8s;
+  -webkit-transition: .8s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.panel-info-visible {
+  padding: 8px 15px;
+  width: auto;
+  transition: .8s;
+  -webkit-transition: .8s;
+}
+
+.faculty-panel .panel-info {
+  right: 0px;
+  left: auto;
+  bottom: 0px;
+}
+
+.blue-panel {
+  background-color: $dark_blue;
+}
+
+.light-blue-panel {
+  background-color: $light_blue;
+}
+
+.light-blue-panel {
+background-color: $light_blue;
+}
+
+.green-panel {
+  background-color: $dark_green;
+}
+
+.red-panel {
+  background-color: $light_red;
+}
+
+.title-panel:hover .title-panel-info {
+  opacity: 1;
+  margin-left: 30px;
+  margin-right: 30px;
+  transition: $standard-transition;
+}
+
+.title-panel .title-panel-info {
+  text-align: center;
+  background: transparent;
+  opacity: 0;
+  transition: $standard-transition;
+  font-size: 1.5em;
+  padding: 30px 0px 20px 0px;
+  margin-right: 60px;
+}
+
+.title-panel-info {
+  color: $white;
+  bottom: auto;
+  top: 30px;
+  overflow: visible;
+}
+
+.package-design {
+  background: $dark_yellow url(../images/faq/bottle.png) no-repeat;
+  transition: $standard-transition;
+}
+
+.package-design:hover {
+  background: $light-yellow url(../images/faq/bottle-hover.png) no-repeat;
+  transition: $standard-transition;
+}
+
+.typography {
+  background: $dark_red url(../images/faq/type.png) no-repeat;
+  transition: $standard-transition;
+}
+
+.typography:hover {
+  background: $light_red url(../images/faq/type-hover.png) no-repeat;
+  transition: $standard-transition;
+}
+
+.html-css {
+  background: $dark_graygreen url(../images/faq/html.png) no-repeat;
+  transition: $standard-transition;
+}
+
+.html-css:hover {
+  background: $light_green url(../images/faq/html-hover.png) no-repeat;
+  transition: $standard-transition;
+}
+
+.graphic-design {
+  background: $dark_grayblue url(../images/faq/fl.png) no-repeat;
+  transition: $standard-transition;
+}
+
+.graphic-design:hover {
+  background: $light_blue url(../images/faq/fj-hover.png) no-repeat;
+  transition: $standard-transition;
+}
+
+.faq-panel {
+  padding: 0px;
+}
+
+/* FAQ Panels without images */
+
+.faq-light-blue-panel {
+  background-color: $dark_grayblue;
+}
+
+.faq-light-blue-panel:hover {
+  background-color: $light_blue;
+  transition: $standard-transition;
+}
+
+.faq-yellow-panel {
+   background-color: $dark_yellow;
+}
+
+.faq-yellow-panel:hover {
+  background-color: $light-yellow;
+  transition: $standard-transition;
+}
+
+.faq-red-panel {
+  background-color: $dark_red;
+}
+
+.faq-red-panel:hover {
+  background-color: $light_red;
+  transition: $standard-transition;
+}
+
+.faq-green-panel {
+  background-color: $dark_graygreen;
+}
+
+.faq-green-panel:hover {
+  background-color: $light_green;
+  transition: $standard-transition;
+}
+
+/* Uniform columns using flex */
+// .faq-container .row {
+//     @include flex;
+//     @include flexwrap;
+// }
+//
+// .faq-container .row [class*="col-"] {
+//   @include flex;
+//   @include flexcolumn;
+// }
+//
+// .primary-sub-row .row {
+//     @include flex;
+//     @include flexwrap;
+// }
+//
+// .primary-sub-row .row [class*="col-"] {
+//   @include flex;
+//   @include flexcolumn;
+// }
+
+#fj-panel {
+  height:66.666666666%;
+  position: relative;
+}
+
+@media (max-width: 992px){
+  .sub-rows .row #fj-panel {
+    height: 100%;
+  }
+
+  .sub-rows .row .javascript-panel {
+    height: 100%;
+  }
+}
+
+@media (min-width: 767px){
+  .sub-rows .row {
+    height: 100%;
+  }
+
+  .sub-rows .row .col-md-12 {
+    height: 50%;
+  }
+
+  .sub-rows .row .javascript-panel {
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .sub-rows .row .javascript-panel {
+    height: 33.333333%;
+  }
+}
+
+@media (max-width: 767px){
+  .empty-panel {
+    min-height: 150px;
+  }
+
+  .sub-rows .row .javascript-panel {
+    min-height: 150px;
+    max-height: 25%;
+  }
+}
+/* End uniform columns */
+
+.faq-panel, .faq-panel:hover {
+  background-size: contain;
+}
+
+.faq-panel {
+  cursor: pointer;
+}
+
+.faq-panel:hover img {
+  opacity: 0;
+  transition: $standard-transition;
+}
+
+.faq-panel img {
+  opacity: 1;
+  transition: $standard-transition;
+  z-index: 0;
+}
+
+.faq-panel h3 {
+  z-index: 100;
+}
+
+.faq-panel {
+  color: $white;
+  border: none;
+  border-radius: 0px;
+  position: relative;
+}
+
+.faq-panel h3 {
+  position: absolute;
+  font-size: 1.4em;
+  bottom: 0;
+  padding: 12px;
+  padding-right: 15px;
+  padding-bottom: 8px;
+  margin: 0px;
+}
+
+.faq-panel svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.faq-panel svg g rect {
+  transition: $standard-transition;
+}
+
+.faq-panel:hover svg g rect {
+  transition: $standard-transition;
+}
+
+.faq-panel.text-left h3 {
+  left: 0;
+}
+
+.faq-panel.text-right h3 {
+  right: 0;
+}
+
+.text-black {
+  color: $black;
+}
+
+.faq-container .empty-panel.faq-panel {
+  height: 241.250px;
+}

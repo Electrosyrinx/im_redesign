@@ -1,0 +1,20 @@
+.title-panel-info, .panel-info, .navbar, h1, h2, h3, h4, h5, h6 {
+  font-family: $font_sans;
+}
+
+body, .serif, .serif p, .serif h2, .serif h3, .serif h4, .serif h5, .serif h6 {
+  font-family: $font_serif;
+}
+
+.profile-info li, .profile-info a, .sans-body {
+  font-family: $font_sans;
+}
+
+.sans_body {
+  font-weight: $sans_light;
+}
+
+.profile-info .blue-link {
+  color: $dark_blue;
+  font-family: $font_serif;
+}

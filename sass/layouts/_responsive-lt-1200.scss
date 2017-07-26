@@ -1,0 +1,23 @@
+
+/* This first one fixes a weird Bootstrap bug
+(or a bug in this CSS that couldn't be found) */
+@media (max-width: 1200px){
+  @media (min-width: 992px){
+    .navbar .container {
+      margin: 0px auto;
+      padding: 0px;
+    }
+
+    main .container {
+      width: 1000px;
+    }
+
+    .panel, .info-icon, .faculty-panel {
+      height: 253px;
+    }
+
+    .panel h3, .faculty-panel .panel-info {
+      font-size: 18px;
+    }
+  }
+}
