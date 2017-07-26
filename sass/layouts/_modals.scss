@@ -1,12 +1,9 @@
-
-
 .btn .fa {
   color: $dark_blue;
 }
 
 .btn {
   background-color: $white;
-  border: $border;
   border-radius: 0px;
 }
 
@@ -23,9 +20,120 @@
     transition: 0.8s; /* 0.5 second transition effect to slide in the slide-modal */
     margin-top: 101px;
     padding: 0px 15px;
+    border: $border;
+    border-top: none;
+    padding-bottom: 200px;
 }
 
 .modal-on-modal {
   background-color: $dark_blue;
   color: $white;
+}
+
+.top-modal-row {
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+
+/* Profile Modals */
+.profile-image {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.profile-label {
+  background-color: $dark_blue;
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
+  padding: 15px;
+  padding-left: 20%;
+}
+
+.profile-label h2, .profile-label h4 {
+  color: $white;
+  margin: 0px;
+}
+
+.profile-label h4 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: $sans_regular;
+}
+
+.course-code {
+  color: $dark_blue;
+}
+
+.profile-info h4 {
+  color: $dark_blue;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: $sans_light;
+}
+
+.profile-info {
+  top: -15px;
+}
+
+.profile-info a, .profile-info li {
+  color: $dark_gray;
+  font-weight: $sans_light;
+  font-size: 0.9em;
+}
+
+.profile-info p {
+  color: $dark_gray;
+}
+
+
+.profile-info hr {
+  width: 100%;
+  border-width: 1px;
+  border-color: $dark_blue;
+}
+
+.student-info p {
+  font-size: 1.1em;
+}
+
+.student-info .sans-body {
+  font-size: 0.9em;
+  color: $dark_gray;
+}
+
+.profile-info .row li .fa {
+  color: $dark_gray;
+}
+
+.student-work-container {
+  padding: 0;
+  margin: 0;
+}
+
+.student-work {
+  padding: 2.5px;
+}
+
+.fixed-column {
+  position: fixed;
+}
+
+.student-work h4 {
+  font-weight: $sans_regular;
+}
+
+.profile-label h2 {
+  margin-bottom: 5px;
+  font-size: 2em;
+}
+
+.student-info ul {
+  padding-left: 20px;
+}
+
+.student-info .sans-body, .profile-info .sans-body {
+  font-weight: $sans_light;
 }

@@ -3,7 +3,7 @@
 $ cd path/to/sass/folder
 $ sass main.scss main.css
 */
-@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Overpass:200,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Overpass:300,400,600,800");
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2338,6 +2338,16 @@ $ sass main.scss main.css
 body, .serif, .serif p, .serif h2, .serif h3, .serif h4, .serif h5, .serif h6 {
   font-family: "Crimson Text", serif; }
 
+.profile-info li, .profile-info a, .sans-body {
+  font-family: "Overpass", sans-serif; }
+
+.sans_body {
+  font-weight: 300; }
+
+.profile-info .blue-link {
+  color: #377ab7;
+  font-family: "Crimson Text", serif; }
+
 .navbar {
   border-bottom: 1px solid #e7e7e7; }
 
@@ -2525,7 +2535,7 @@ main .container {
   color: #ffffff; }
 
 .faculty-panel .panel-info {
-  font-weight: 200; }
+  font-weight: 300; }
 
 .panel, .faculty-panel, .info-icon {
   height: 296px;
@@ -2558,7 +2568,7 @@ main .container {
   transition: 0.8s; }
 
 .title-panel h3 {
-  font-weight: 200; }
+  font-weight: 300; }
 
 .info-icon h3 {
   color: #ffffff; }
@@ -2692,50 +2702,6 @@ main .container {
   transition: 0.8s; }
 
 /* Uniform columns using flex */
-.faq-container .row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap; }
-
-.faq-container .row [class*="col-"] {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-direction: column; }
-
-.primary-sub-row .row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap; }
-
-.primary-sub-row .row [class*="col-"] {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-direction: column; }
-
 #fj-panel {
   height: 66.666666666%;
   position: relative; }
@@ -2824,7 +2790,6 @@ main .container {
 
 .btn {
   background-color: #ffffff;
-  border: 1px solid #e7e7e7;
   border-radius: 0px; }
 
 .slide-modal, .modal-on-modal {
@@ -2845,11 +2810,100 @@ main .container {
   transition: 0.8s;
   /* 0.5 second transition effect to slide in the slide-modal */
   margin-top: 101px;
-  padding: 0px 15px; }
+  padding: 0px 15px;
+  border: 1px solid #e7e7e7;
+  border-top: none;
+  padding-bottom: 200px; }
 
 .modal-on-modal {
   background-color: #377ab7;
   color: #ffffff; }
+
+.top-modal-row {
+  margin-top: 75px;
+  margin-bottom: 25px; }
+
+/* Profile Modals */
+.profile-image {
+  position: relative;
+  margin-bottom: 20px; }
+
+.profile-label {
+  background-color: #377ab7;
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
+  padding: 15px;
+  padding-left: 20%; }
+
+.profile-label h2, .profile-label h4 {
+  color: #ffffff;
+  margin: 0px; }
+
+.profile-label h4 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 400; }
+
+.course-code {
+  color: #377ab7; }
+
+.profile-info h4 {
+  color: #377ab7;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 300; }
+
+.profile-info {
+  top: -15px; }
+
+.profile-info a, .profile-info li {
+  color: gray;
+  font-weight: 300;
+  font-size: 0.9em; }
+
+.profile-info p {
+  color: gray; }
+
+.profile-info hr {
+  width: 100%;
+  border-width: 1px;
+  border-color: #377ab7; }
+
+.student-info p {
+  font-size: 1.1em; }
+
+.student-info .sans-body {
+  font-size: 0.9em;
+  color: gray; }
+
+.profile-info .row li .fa {
+  color: gray; }
+
+.student-work-container {
+  padding: 0;
+  margin: 0; }
+
+.student-work {
+  padding: 2.5px; }
+
+.fixed-column {
+  position: fixed; }
+
+.student-work h4 {
+  font-weight: 400; }
+
+.profile-label h2 {
+  margin-bottom: 5px;
+  font-size: 2em; }
+
+.student-info ul {
+  padding-left: 20px; }
+
+.student-info .sans-body, .profile-info .sans-body {
+  font-weight: 300; }
 
 /* Colors for info page icons */
 .cls-green {
@@ -2927,10 +2981,19 @@ svg:hover + .info-label {
   overflow: hidden; }
 
 /* Be mindful of load order, especially here */
+@media (min-width: 1800px) {
+  .fixed-column {
+    max-width: 22%; } }
 /* Increase container width on large screens */
 @media (min-width: 1500px) {
   .container {
     max-width: 1398px; } }
+@media (max-width: 1800px) {
+  .fixed-column {
+    max-width: 33%; } }
+@media (max-width: 1400px) {
+  .fixed-column {
+    max-width: 100%; } }
 /* This first one fixes a weird Bootstrap bug
 (or a bug in this CSS that couldn't be found) */
 @media (max-width: 1200px) and (min-width: 992px) {
@@ -2972,6 +3035,9 @@ svg:hover + .info-label {
   main .info-icon-container .row {
     padding: 0px 0px;
     padding-top: 25px; } }
+@media (max-width: 767px) {
+  .fixed-column {
+    position: inherit; } }
 /* Fix column shifting issue with current-students.html */
 @media (max-width: 560px) {
   .info-icon h3 {

@@ -3,7 +3,7 @@ $ cd path/to/sass/folder
 $ sass main.scss main.css
 */
 
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Overpass:200,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Overpass:300,400,600,800');
 @import "font-awesome/font-awesome";
 @import "helpers/colours";
 @import "helpers/variables";
@@ -18,9 +18,13 @@ $ sass main.scss main.css
 @import "pages/students-alumni";
 @import "pages/what-we-do";
 /* Be mindful of load order, especially here */
+@import "layouts/responsive-gt-1800";
 @import "layouts/responsive-gt-1500";
+@import "layouts/responsive-lt-1800";
+@import "layouts/responsive-lt-1400";
 @import "layouts/responsive-lt-1200";
 @import "layouts/responsive-lt-820";
+@import "layouts/responsive-lt-767";
 @import "layouts/responsive-lt-560";
 @import "layouts/responsive-lt-420";
 @import "layouts/responsive-lt-370";

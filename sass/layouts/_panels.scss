@@ -220,25 +220,25 @@ background-color: $light_blue;
 }
 
 /* Uniform columns using flex */
-.faq-container .row {
-    @include flex;
-    @include flexwrap;
-}
-
-.faq-container .row [class*="col-"] {
-  @include flex;
-  @include flexcolumn;
-}
-
-.primary-sub-row .row {
-    @include flex;
-    @include flexwrap;
-}
-
-.primary-sub-row .row [class*="col-"] {
-  @include flex;
-  @include flexcolumn;
-}
+// .faq-container .row {
+//     @include flex;
+//     @include flexwrap;
+// }
+//
+// .faq-container .row [class*="col-"] {
+//   @include flex;
+//   @include flexcolumn;
+// }
+//
+// .primary-sub-row .row {
+//     @include flex;
+//     @include flexwrap;
+// }
+//
+// .primary-sub-row .row [class*="col-"] {
+//   @include flex;
+//   @include flexcolumn;
+// }
 
 #fj-panel {
   height:66.666666666%;

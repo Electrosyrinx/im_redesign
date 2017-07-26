@@ -7,15 +7,15 @@
 }
 
 @mixin flexwrap {
-  flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 @mixin flexcolumn {
-  flex-direction: column;
-  -webkit-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-flex-flow: column wrap;
   -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
 }
