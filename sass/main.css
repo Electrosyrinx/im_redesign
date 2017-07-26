@@ -2785,6 +2785,9 @@ main .container {
 .text-black {
   color: #000000; }
 
+.faq-container .empty-panel.faq-panel {
+  height: 241.250px; }
+
 .btn .fa {
   color: #377ab7; }
 
@@ -3008,7 +3011,24 @@ svg:hover + .info-label {
     height: 253px; }
 
   .panel h3, .faculty-panel .panel-info {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  .faq-container .empty-panel.faq-panel {
+    height: 206.125px; } }
+/* This first one fixes a weird Bootstrap bug
+(or a bug in this CSS that couldn't be found) */
+@media (max-width: 992px) {
+  .faq-container .empty-panel.faq-panel {
+    height: 257.484px; }
+
+  .faq-container .javascript-panel.faq-panel {
+    height: 514.984px; }
+
+  .faq-container .ux-panel.faq-panel {
+    height: 193.109px; }
+
+  .faq-container .cc-panel.faq-panel {
+    height: calc(386.234px / 2); } }
 @media (max-width: 820px) {
   /* Nav */
   .nav-item, .list-nav-item {
@@ -3037,7 +3057,10 @@ svg:hover + .info-label {
     padding-top: 25px; } }
 @media (max-width: 767px) {
   .fixed-column {
-    position: inherit; } }
+    position: inherit; }
+
+  .faq-container .empty-panel.faq-panel {
+    height: 300px; } }
 /* Fix column shifting issue with current-students.html */
 @media (max-width: 560px) {
   .info-icon h3 {
@@ -3049,7 +3072,10 @@ svg:hover + .info-label {
 
   /* Main */
   .panel, .info-icon, .faculty-panel {
-    max-height: 205px; } }
+    max-height: 205px; }
+
+  .faq-container .empty-panel.faq-panel {
+    height: 200px; } }
 @media (max-width: 370px) {
   /* Nav */
   .navbar-brand {
