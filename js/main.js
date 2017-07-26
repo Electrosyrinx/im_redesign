@@ -12,6 +12,9 @@ $(document).ready(function(){
     loadDesktopBar();
   }
 
+  // Stops fixed hidden elements in modals from interfering with visible page
+  $(".fixed-column-tag").removeClass("fixed-column");
+
   // If you're a critical designer or developer, you likely resized your browser
   // to see how well we coded the website for various sizes. However, if you're
   // on desktop and resize the navbar to mobile size, it will still display the
@@ -22,6 +25,12 @@ $(document).ready(function(){
       loadMobileBar();
     } else {
       loadDesktopBar();
+    }
+
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      $(".fixed-column-tag").removeClass("fixed-column");
+    } else {
+      $(".fixed-column-tag").addClass("fixed-column");
     }
   });
 
@@ -36,37 +45,99 @@ $(document).ready(function(){
   /* Modals */
   // Clicking the panel will close any presently open modals (if any) and then
   // open the modal specified by the panel.
-  $(".matt-boucher").click(function(){
+  $(".student-panel").click(function(){
+    var hyphenedName = $(this).attr('id').replace('-panel', '');
     closeAllModals();
+    // This loads portfolio images on-demand, rather than on page-load to
+    // prevent students-alumni.html from taking forever to load
+    loadPortfolio($("#" + hyphenedName).attr('id'));
+    mattLoaded = true;
     // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       // When closed, the width of the modal is 0px, ie, invisible. When the
       // width is increased, the modal becomes visible
-      $("#matt-boucher").css("width", "100%");
+      $("#" + hyphenedName).css("width", "100%");
     } else {
-      $("#matt-boucher").css("width", "inherit");
+      $("#" + hyphenedName).css("width", "inherit");
     }
-    $("#matt-boucher").css("opacity", "1");
+    $("#" + hyphenedName).css("opacity", "1");
+
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      $(".fixed-column-tag").removeClass("fixed-column");
+    } else {
+      $(".fixed-column-tag").addClass("fixed-column");
+    }
   });
 
-  $(".brittany-king").click(function(){
+  // Faculty Modals
+  $(".frank-lu").click(function(){
     closeAllModals();
     if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#brittany-king").css("width", "100%");
+      $("#frank-lu").css("width", "100%");
     } else {
-      $("#brittany-king").css("width", "inherit");
+      $("#frank-lu").css("width", "inherit");
     }
-    $("#brittany-king").css("opacity", "1");
+    $("#frank-lu").css("opacity", "1");
   });
 
-  $(".krista-mcallister").click(function(){
+  $(".susanne-sampson").click(function(){
     closeAllModals();
     if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#krista-mcallister").css("width", "100%");
+      $("#susanne-sampson").css("width", "100%");
     } else {
-      $("#krista-mcallister").css("width", "inherit");
+      $("#susanne-sampson").css("width", "inherit");
     }
-    $("#krista-mcallister").css("opacity", "1");
+    $("#susanne-sampson").css("opacity", "1");
+  });
+
+  $(".megan-wilson").click(function(){
+    closeAllModals();
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#megan-wilson").css("width", "100%");
+    } else {
+      $("#megan-wilson").css("width", "inherit");
+    }
+    $("#megan-wilson").css("opacity", "1");
+  });
+
+  $(".ashley-blacquiere").click(function(){
+    closeAllModals();
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#ashley-blacquiere").css("width", "100%");
+    } else {
+      $("#ashley-blacquiere").css("width", "inherit");
+    }
+    $("#ashley-blacquiere").css("opacity", "1");
+  });
+
+  $(".steve-mackey").click(function(){
+    closeAllModals();
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#steve-mackey").css("width", "100%");
+    } else {
+      $("#steve-mackey").css("width", "inherit");
+    }
+    $("#steve-mackey").css("opacity", "1");
+  });
+
+  $(".gordon-ross").click(function(){
+    closeAllModals();
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#gordon-ross").css("width", "100%");
+    } else {
+      $("#gordon-ross").css("width", "inherit");
+    }
+    $("#gordon-ross").css("opacity", "1");
+  });
+
+  $(".sid-parmar").click(function(){
+    closeAllModals();
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      $("#sid-parmar").css("width", "100%");
+    } else {
+      $("#sid-parmar").css("width", "inherit");
+    }
+    $("#sid-parmar").css("opacity", "1");
   });
 
   // Info Page Modals
@@ -133,24 +204,28 @@ $(document).ready(function(){
   /* Move to next modal */
   $(".next-modal").click(function(){
     closeAllModals();
+    $next = $(this).parentsUntil(".slide-modal").last().parent().next();
+    loadPortfolio($next.attr('id'));
     if (window.matchMedia('(max-width: 820px)').matches) {
-      $(this).parent().next().css("width", "100%");
+      $next.css("width", "100%");
     } else {
-      $(this).parent().next().css("width", "inherit");
+      $next.css("width", "inherit");
     }
-    $(this).parent().next().css("opacity", "1");
+    $next.css("opacity", "1");
   });
 
   /* Move to previous modal */
   $(".prev-modal").click(function(){
     closeAllModals();
+    $prev = $(this).parentsUntil(".slide-modal").last().parent().prev();
+    loadPortfolio($prev.attr('id'));
     // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
-      $(this).parent().prev().css("width", "100%");
+      $prev.css("width", "100%");
     } else {
-      $(this).parent().prev().css("width", "inherit");
+      $prev.css("width", "inherit");
     }
-    $(this).parent().prev().css("opacity", "1");
+    $prev.css("opacity", "1");
   });
 
   // Open Modal on Modal
@@ -273,8 +348,8 @@ $(document).ready(function(){
     }
   });
 
-  // Manipulate navigation after it's loaded.
-  // Any JS used to manipulate navigation should be written here
+  // Manipulate elements after they're loaded loaded.
+  // Any JS used to manipulate loaded elements should be written here
   $.ajax({
     url: 'partials/desktop-navigation.html' || 'partials/mobile-navigation.html',
     success: function(){
@@ -283,7 +358,6 @@ $(document).ready(function(){
         $('.navbar-brand').hide();
       }
 
-      // Change to http://www.nicinteractive.media/ pre-deployment
       var current_location = window.location.pathname;
       switch(current_location) {
         case "/how-we-made-this.html":
@@ -321,6 +395,10 @@ function loadMobileBar() {
   $('#navbar').load('partials/mobile-navigation.html');
 }
 
+function loadPortfolio(hyphenedName) {
+  $('.works-' + hyphenedName).load('partials/' + hyphenedName + '.html');
+}
+
 function loadPage(href)
 {
   var xmlhttp = new XMLHttpRequest();
@@ -331,12 +409,13 @@ function loadPage(href)
 
 /* Close/hide all modals */
 function closeAllModals(){
-    $(".slide-modal").css("width", "0");
-    $(".slide-modal").css("opacity", "0");
+  $(".slide-modal").css("width", "0");
+  $(".slide-modal").css("opacity", "0");
+  $(".fixed-column-tag").removeClass("fixed-column");
 }
 
 /* Close/hide all modals on modals */
 function closeSecondaryModals(){
-    $(".modal-on-modal").css("width", "0");
-    $(".modal-on-modal").css("opacity", "0");
+  $(".modal-on-modal").css("width", "0");
+  $(".modal-on-modal").css("opacity", "0");
 }
