@@ -2611,7 +2611,7 @@ main .container {
   background-color: #4faddd; }
 
 .green-panel {
-  background-color: #60b481; }
+  background-color: #51a86e; }
 
 .red-panel {
   background-color: #ee4037; }
@@ -2658,7 +2658,7 @@ main .container {
   transition: 0.8s; }
 
 .html-css:hover {
-  background: #8dc73f url(../images/faq/html-hover.png) no-repeat;
+  background: #5ac280 url(../images/faq/html-hover.png) no-repeat;
   transition: 0.8s; }
 
 .graphic-design {
@@ -2698,7 +2698,7 @@ main .container {
   background-color: #93a048; }
 
 .faq-green-panel:hover {
-  background-color: #8dc73f;
+  background-color: #5ac280;
   transition: 0.8s; }
 
 /* Uniform columns using flex */
@@ -2910,7 +2910,7 @@ main .container {
 
 /* Colors for info page icons */
 .cls-green {
-  fill: #60b481; }
+  fill: #51a86e; }
 
 .cls-blue {
   fill: #377ab7; }
@@ -2945,11 +2945,11 @@ main .container {
   transition: 0.8s; }
 
 .info-icon:hover .green-svg .cls-green {
-  fill: #8dc73f;
+  fill: #5ac280;
   transition: 0.8s; }
 
 .info-icon.green-panel:hover {
-  background-color: #8dc73f;
+  background-color: #5ac280;
   transition: 0.8s; }
 
 .info-icon:hover svg .cls-white {
