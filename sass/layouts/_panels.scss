@@ -138,7 +138,7 @@ background-color: $light_blue;
 }
 
 .package-design {
-  background: $light_green url(../images/faq/bottle.png) no-repeat;
+  background: $lightest_blue url(../images/faq/bottle.png) no-repeat;
   transition: $standard-transition;
 }
 
@@ -153,7 +153,7 @@ background-color: $light_blue;
 }
 
 .typography:hover {
-  background: $light_green url(../images/faq/type-hover.png) no-repeat;
+  background: $light_blue_hover url(../images/faq/type-hover.png) no-repeat;
   transition: $standard-transition;
 }
 
@@ -163,7 +163,7 @@ background-color: $light_blue;
 }
 
 .html-css:hover {
-  background: $dark_graygreen url(../images/faq/html-hover.png) no-repeat;
+  background: $dark_green url(../images/faq/html-hover.png) no-repeat;
   transition: $standard-transition;
 }
 
@@ -173,8 +173,22 @@ background-color: $light_blue;
 }
 
 .graphic-design:hover {
-  background: $dark_blue url(../images/faq/fj-hover.png) no-repeat;
+  background: $dark_blue_hover url(../images/faq/fj-hover.png) no-repeat;
   transition: $standard-transition;
+}
+
+.faq-panel {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.adobe-cc {
+  top: -1px;
+}
+
+.primary-sub-row .row {
+  overflow: hidden;
+  background-color: black;
 }
 
 .faq-panel {
@@ -185,47 +199,50 @@ background-color: $light_blue;
   opacity: 0;
 }
 
-.faq-panel:hover {
-  -webkit-filter: saturate(70%); /* Safari 6.0 - 9.0 */
-  filter: saturate(70%);
-  transition: 0.8s;
-}
-
 /* FAQ Panels without images */
 
-.faq-light-blue-panel {
+.ux-design {
   background-color: $dark_blue;
 }
 
-.faq-light-blue-panel:hover {
-  background-color: $light_blue;
+.ux-design:hover {
+  background-color: $dark_blue_hover;
   transition: $standard-transition;
 }
 
-.faq-yellow-panel {
+.project-management {
    background-color: $dark_blue;
 }
 
-.faq-yellow-panel:hover {
+.project-management:hover {
+  background-color: $dark_blue_hover;
+  transition: $standard-transition;
+}
+
+.ruby-php-sql {
+  background-color: $light_blue;
+}
+
+.ruby-php-sql:hover {
+  background-color: $light_blue_hover;
+  transition: $standard-transition;
+}
+
+.ios-android {
+  background-color: $light_green;
+}
+
+.ios-android:hover {
   background-color: $dark_green;
   transition: $standard-transition;
 }
 
-.faq-red-panel {
-  background-color: $light_blue;
-}
-
-.faq-red-panel:hover {
-  background-color: $dark_blue;
-  transition: $standard-transition;
-}
-
-.faq-green-panel {
+.javascript {
   background-color: $light_green;
 }
 
-.faq-green-panel:hover {
-  background-color: $light_green;
+.javascript:hover {
+  background-color: $dark_green;
   transition: $standard-transition;
 }
 

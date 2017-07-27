@@ -6,15 +6,42 @@
     height: 257.484px;
   }
 
-  .faq-container .javascript-panel.faq-panel {
+  .faq-container .javascript.faq-panel {
     height: 514.984px;
   }
 
-  .faq-container .ux-panel.faq-panel {
+  .faq-container .ux-design.faq-panel {
     height: 193.109px;
   }
 
   .faq-container .cc-panel.faq-panel {
     height: calc(386.234px / 2);
+  }
+
+  .ios-android {
+    background-color: $light_blue;
+  }
+
+  .ios-android:hover {
+    background-color: $dark_blue;
+    transition: $standard-transition;
+  }
+
+  .project-management {
+     background-color: $light_blue;
+  }
+
+  .project-management:hover {
+    background-color: $light_blue_hover;
+    transition: $standard-transition;
+  }
+
+  .ruby-php-sql {
+    background-color: $dark_blue;
+  }
+
+  .ruby-php-sql:hover {
+    background-color: $dark_blue_hover;
+    transition: $standard-transition;
   }
 }
