@@ -1,7 +1,7 @@
 @media (max-width: 370px){
   /* Nav */
   .navbar-brand {
-    top: 0px;
+    top: 25px;
     left: 0px;
   }
 
@@ -9,8 +9,17 @@
     height: 35px;
   }
 
+  .navbar .social a {
+    padding: 10px;
+  }
+
+  .navbar .social {
+    height: 50px;
+    width: 50px;
+  }
+
   .fa {
-    font-size: 12px;
+    font-size: 20px;
   }
 
   .social {

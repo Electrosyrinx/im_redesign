@@ -2638,64 +2638,73 @@ main .container {
   overflow: visible; }
 
 .package-design {
-  background: #f1d242 url(../images/faq/bottle.png) no-repeat;
+  background: #8dc73f url(../images/faq/bottle.png) no-repeat;
   transition: 0.8s; }
 
 .package-design:hover {
-  background: #f7f126 url(../images/faq/bottle-hover.png) no-repeat;
+  background: #4faddd url(../images/faq/bottle-hover.png) no-repeat;
   transition: 0.8s; }
 
 .typography {
-  background: #cf5135 url(../images/faq/type.png) no-repeat;
+  background: #4faddd url(../images/faq/type.png) no-repeat;
   transition: 0.8s; }
 
 .typography:hover {
-  background: #ee4037 url(../images/faq/type-hover.png) no-repeat;
+  background: #8dc73f url(../images/faq/type-hover.png) no-repeat;
   transition: 0.8s; }
 
 .html-css {
-  background: #93a048 url(../images/faq/html.png) no-repeat;
+  background: #8dc73f url(../images/faq/html.png) no-repeat;
   transition: 0.8s; }
 
 .html-css:hover {
-  background: #8dc73f url(../images/faq/html-hover.png) no-repeat;
+  background: #6cc0e5 url(../images/faq/html-hover.png) no-repeat;
   transition: 0.8s; }
 
 .graphic-design {
-  background: #5e9dac url(../images/faq/fl.png) no-repeat;
+  background: #377ab7 url(../images/faq/fl.png) no-repeat;
   transition: 0.8s; }
 
 .graphic-design:hover {
-  background: #4faddd url(../images/faq/fj-hover.png) no-repeat;
+  background: #377ab7 url(../images/faq/fj-hover.png) no-repeat;
   transition: 0.8s; }
 
 .faq-panel {
   padding: 0px; }
 
+.graphic-design .img-responsive {
+  opacity: 0; }
+
+.faq-panel:hover {
+  -webkit-filter: saturate(70%);
+  /* Safari 6.0 - 9.0 */
+  filter: saturate(70%);
+  transition: 0.8s; }
+
 /* FAQ Panels without images */
 .faq-light-blue-panel {
-  background-color: #5e9dac; }
+  background-color: #377ab7; }
 
 .faq-light-blue-panel:hover {
   background-color: #4faddd;
   transition: 0.8s; }
 
 .faq-yellow-panel {
-  background-color: #f1d242; }
+  background-color: #377ab7; }
 
 .faq-yellow-panel:hover {
-  background-color: #f7f126;
+  background-color: #60b481;
   transition: 0.8s; }
 
 .faq-red-panel {
-  background-color: #cf5135; }
+  background-color: #4faddd; }
 
 .faq-red-panel:hover {
-  background-color: #ee4037;
+  background-color: #377ab7;
   transition: 0.8s; }
 
 .faq-green-panel {
-  background-color: #93a048; }
+  background-color: #8dc73f; }
 
 .faq-green-panel:hover {
   background-color: #8dc73f;
@@ -2983,6 +2992,32 @@ svg:hover + .info-label {
   padding-bottom: 0px;
   overflow: hidden; }
 
+.faculty-panel .panel-info {
+  text-transform: lowercase; }
+
+.contact {
+  list-style: none;
+  padding-left: 0; }
+
+.contact li a {
+  font-size: 1em; }
+
+ul {
+  padding-left: inherit; }
+
+.faculty-background {
+  font-size: 1.1em; }
+
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.teaching {
+  margin-bottom: 25px; }
+
+.student-panel .panel-info {
+  text-transform: lowercase; }
+
 /* Be mindful of load order, especially here */
 @media (min-width: 1800px) {
   .fixed-column {
@@ -3079,14 +3114,21 @@ svg:hover + .info-label {
 @media (max-width: 370px) {
   /* Nav */
   .navbar-brand {
-    top: 0px;
+    top: 25px;
     left: 0px; }
 
   .navbar-brand img {
     height: 35px; }
 
+  .navbar .social a {
+    padding: 10px; }
+
+  .navbar .social {
+    height: 50px;
+    width: 50px; }
+
   .fa {
-    font-size: 12px; }
+    font-size: 20px; }
 
   .social {
     height: 30px;
