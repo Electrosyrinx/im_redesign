@@ -2,3 +2,33 @@
   padding-bottom: 0px;
   overflow: hidden;
 }
+
+.faculty-panel .panel-info {
+  text-transform: lowercase;
+}
+
+.contact {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact li a {
+  font-size: 1em;
+}
+
+ul {
+    padding-left: inherit;
+}
+
+.faculty-background {
+	font-size: 1.1em;
+}
+
+hr {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.teaching {
+	margin-bottom: 25px;
+}

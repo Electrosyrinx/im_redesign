@@ -212,6 +212,16 @@ $(document).ready(function(){
       $next.css("width", "inherit");
     }
     $next.css("opacity", "1");
+
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      $(".fixed-column-tag").removeClass("fixed-column");
+    } else {
+      $(".fixed-column-tag").addClass("fixed-column");
+    }
+
+    if (!$next.hasClass('slide-modal')) {
+      $(".fixed-column-tag").removeClass("fixed-column");
+    }
   });
 
   /* Move to previous modal */
@@ -226,6 +236,16 @@ $(document).ready(function(){
       $prev.css("width", "inherit");
     }
     $prev.css("opacity", "1");
+
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      $(".fixed-column-tag").removeClass("fixed-column");
+    } else {
+      $(".fixed-column-tag").addClass("fixed-column");
+    }
+
+    if (!$prev.hasClass('slide-modal')) {
+      $(".fixed-column-tag").removeClass("fixed-column");
+    }
   });
 
   // Open Modal on Modal
