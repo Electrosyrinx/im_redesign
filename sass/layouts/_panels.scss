@@ -143,7 +143,7 @@ background-color: $light_blue;
 }
 
 .package-design:hover {
-  background: $light_blue url(../images/faq/bottle-hover.png) no-repeat;
+  background: $lightest_blue_hover url(../images/faq/bottle-hover.png) no-repeat;
   transition: $standard-transition;
 }
 
@@ -183,11 +183,6 @@ background-color: $light_blue;
 }
 
 .adobe-cc {
-  top: -1px;
-}
-
-.primary-sub-row .row {
-  overflow: hidden;
   background-color: black;
 }
 
@@ -330,11 +325,6 @@ background-color: $light_blue;
 .faq-panel img {
   opacity: 1;
   transition: $standard-transition;
-  z-index: 0;
-}
-
-.faq-panel h3 {
-  z-index: 100;
 }
 
 .faq-panel {

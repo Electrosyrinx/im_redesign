@@ -137,3 +137,64 @@
 .student-info .sans-body, .profile-info .sans-body {
   font-weight: $sans_light;
 }
+
+.faq-modal h2, .faq-modal h3 {
+  text-transform: lowercase;
+  color: $dark_blue;
+  text-align: right;
+}
+
+.faq-modal h2 {
+  font-size: 4em;
+  font-weight: $sans_extrabold;
+  margin-top: 10px;
+}
+
+.faq-modal h3 {
+  opacity: 0.5;
+  font-family: $font_serif;
+  font-weight: $serif_bold;
+  font-size: 3em;
+}
+
+.faq-modal .faq-intro-text {
+  color: $dark_gray;
+  font-size: 1.3em;
+  font-family: $font_sans;
+  font-weight: $sans_light;
+}
+
+.where-who-container .faq-description-text {
+  font-family: $font_sans;
+  font-weight: $sans_light;
+  color: $dark_gray;
+  font-size: 0.9em;
+}
+
+.faq-right-column {
+  position: relative;
+}
+
+.caption {
+  margin-top: 15px;
+  font-family: $font_sans;
+  font-weight: $sans_light;
+  font-style: italic;
+  font-size: 0.7em;
+  color: $dark_gray;
+}
+
+.where-who-container {
+  max-width: 70%;
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  background-color: $white;
+  padding: 10px;
+  padding-right: 25px;
+}
+
+.student-work-image {
+  max-width: 80%;
+  margin: 0 auto;
+}

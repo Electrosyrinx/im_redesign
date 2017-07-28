@@ -18,14 +18,14 @@ $ sass main.scss main.css
 @import "pages/students-alumni";
 @import "pages/what-we-do";
 /* Be mindful of load order, especially here */
-@import "layouts/responsive-gt-1800";
-@import "layouts/responsive-gt-1500";
-@import "layouts/responsive-lt-1800";
-@import "layouts/responsive-lt-1400";
-@import "layouts/responsive-lt-1200";
-@import "layouts/responsive-lt-992";
-@import "layouts/responsive-lt-820";
-@import "layouts/responsive-lt-767";
-@import "layouts/responsive-lt-560";
-@import "layouts/responsive-lt-420";
-@import "layouts/responsive-lt-370";
+@import "responsive/responsive-gt-1800";
+@import "responsive/responsive-gt-1500";
+@import "responsive/responsive-lt-1800";
+@import "responsive/responsive-lt-1400";
+@import "responsive/responsive-lt-1200";
+@import "responsive/responsive-lt-992";
+@import "responsive/responsive-lt-820";
+@import "responsive/responsive-lt-767";
+@import "responsive/responsive-lt-560";
+@import "responsive/responsive-lt-420";
+@import "responsive/responsive-lt-370";

@@ -51,7 +51,6 @@ $(document).ready(function(){
     // This loads portfolio images on-demand, rather than on page-load to
     // prevent students-alumni.html from taking forever to load
     loadPortfolio($("#" + hyphenedName).attr('id'));
-    mattLoaded = true;
     // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       // When closed, the width of the modal is 0px, ie, invisible. When the
@@ -70,74 +69,39 @@ $(document).ready(function(){
   });
 
   // Faculty Modals
-  $(".frank-lu").click(function(){
+  $(".faculty-panel").click(function(){
+    var hyphenedName = $(this).attr('id').replace('-panel', '');
     closeAllModals();
+    // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#frank-lu").css("width", "100%");
+      // When closed, the width of the modal is 0px, ie, invisible. When the
+      // width is increased, the modal becomes visible
+      $("#" + hyphenedName).css("width", "100%");
     } else {
-      $("#frank-lu").css("width", "inherit");
+      $("#" + hyphenedName).css("width", "inherit");
     }
-    $("#frank-lu").css("opacity", "1");
+    $("#" + hyphenedName).css("opacity", "1");
+
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      $(".fixed-column-tag").removeClass("fixed-column");
+    } else {
+      $(".fixed-column-tag").addClass("fixed-column");
+    }
   });
 
-  $(".susanne-sampson").click(function(){
+  // FAQ Modals
+  $(".faq-panel").click(function(){
+    var hyphenedName = $(this).attr('id').replace('-panel', '');
     closeAllModals();
+    // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#susanne-sampson").css("width", "100%");
+      // When closed, the width of the modal is 0px, ie, invisible. When the
+      // width is increased, the modal becomes visible
+      $("#" + hyphenedName).css("width", "100%");
     } else {
-      $("#susanne-sampson").css("width", "inherit");
+      $("#" + hyphenedName).css("width", "inherit");
     }
-    $("#susanne-sampson").css("opacity", "1");
-  });
-
-  $(".megan-wilson").click(function(){
-    closeAllModals();
-    if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#megan-wilson").css("width", "100%");
-    } else {
-      $("#megan-wilson").css("width", "inherit");
-    }
-    $("#megan-wilson").css("opacity", "1");
-  });
-
-  $(".ashley-blacquiere").click(function(){
-    closeAllModals();
-    if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#ashley-blacquiere").css("width", "100%");
-    } else {
-      $("#ashley-blacquiere").css("width", "inherit");
-    }
-    $("#ashley-blacquiere").css("opacity", "1");
-  });
-
-  $(".steve-mackey").click(function(){
-    closeAllModals();
-    if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#steve-mackey").css("width", "100%");
-    } else {
-      $("#steve-mackey").css("width", "inherit");
-    }
-    $("#steve-mackey").css("opacity", "1");
-  });
-
-  $(".gordon-ross").click(function(){
-    closeAllModals();
-    if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#gordon-ross").css("width", "100%");
-    } else {
-      $("#gordon-ross").css("width", "inherit");
-    }
-    $("#gordon-ross").css("opacity", "1");
-  });
-
-  $(".sid-parmar").click(function(){
-    closeAllModals();
-    if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#sid-parmar").css("width", "100%");
-    } else {
-      $("#sid-parmar").css("width", "inherit");
-    }
-    $("#sid-parmar").css("opacity", "1");
+    $("#" + hyphenedName).css("opacity", "1");
   });
 
   // Info Page Modals

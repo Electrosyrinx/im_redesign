@@ -2638,11 +2638,11 @@ main .container {
   overflow: visible; }
 
 .package-design {
-  background: #ceeaff url(../images/faq/bottle.png) no-repeat;
+  background: #82cee0 url(../images/faq/bottle.png) no-repeat;
   transition: 0.8s; }
 
 .package-design:hover {
-  background: #4faddd url(../images/faq/bottle-hover.png) no-repeat;
+  background: #6ab5c6 url(../images/faq/bottle-hover.png) no-repeat;
   transition: 0.8s; }
 
 .typography {
@@ -2674,10 +2674,6 @@ main .container {
   background-repeat: no-repeat; }
 
 .adobe-cc {
-  top: -1px; }
-
-.primary-sub-row .row {
-  overflow: hidden;
   background-color: black; }
 
 .faq-panel {
@@ -2765,11 +2761,7 @@ main .container {
 
 .faq-panel img {
   opacity: 1;
-  transition: 0.8s;
-  z-index: 0; }
-
-.faq-panel h3 {
-  z-index: 100; }
+  transition: 0.8s; }
 
 .faq-panel {
   color: #ffffff;
@@ -2929,6 +2921,58 @@ main .container {
 .student-info .sans-body, .profile-info .sans-body {
   font-weight: 300; }
 
+.faq-modal h2, .faq-modal h3 {
+  text-transform: lowercase;
+  color: #377ab7;
+  text-align: right; }
+
+.faq-modal h2 {
+  font-size: 4em;
+  font-weight: 800;
+  margin-top: 10px; }
+
+.faq-modal h3 {
+  opacity: 0.5;
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 3em; }
+
+.faq-modal .faq-intro-text {
+  color: gray;
+  font-size: 1.3em;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300; }
+
+.where-who-container .faq-description-text {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  color: gray;
+  font-size: 0.9em; }
+
+.faq-right-column {
+  position: relative; }
+
+.caption {
+  margin-top: 15px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.7em;
+  color: gray; }
+
+.where-who-container {
+  max-width: 70%;
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  background-color: #ffffff;
+  padding: 10px;
+  padding-right: 25px; }
+
+.student-work-image {
+  max-width: 80%;
+  margin: 0 auto; }
+
 /* Colors for info page icons */
 .cls-green {
   fill: #51a86e; }
@@ -3033,7 +3077,7 @@ hr {
 /* Be mindful of load order, especially here */
 @media (min-width: 1800px) {
   .fixed-column {
-    max-width: 22%; } }
+    width: 589px; } }
 /* Increase container width on large screens */
 @media (min-width: 1500px) {
   .container {
