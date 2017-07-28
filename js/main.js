@@ -103,19 +103,25 @@ $(document).ready(function(){
     }
     $("#" + hyphenedName).css("opacity", "1");
   });
-  
+
   // Images fading in and out on some FAQ modals
   var hide = false;
   setInterval(function(){
     if (!hide) {
       $(".modal-fade-image img").css("opacity", "0");
+
+      $(".modal-fade-image-caption").css("opacity", "0");
+      $(".modal-fade-image-caption-2").css("opacity", "1");
       hide = true;
     } else {
       $(".modal-fade-image img").css("opacity", "1");
+
+      $(".modal-fade-image-caption").css("opacity", "1");
+      $(".modal-fade-image-caption-2").css("opacity", "0");
       hide = false;
     }
   }, 3500);
-  
+
 
   // Info Page Modals
   $(".lab-schedule").click(function(){

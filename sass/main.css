@@ -2989,6 +2989,22 @@ main .container {
   opacity: 1;
   transition: 3s; }
 
+.faq-modal-2-caption {
+  position: relative; }
+
+.modal-fade-image-caption, .modal-fade-image-caption-2 {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.modal-fade-image-caption {
+  opacity: 1;
+  transition: 3s; }
+
+.modal-fade-image-caption-2 {
+  opacity: 0;
+  transition: 3s; }
+
 /* Colors for info page icons */
 .cls-green {
   fill: #51a86e; }
