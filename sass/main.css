@@ -3071,6 +3071,50 @@ hr {
 .teaching {
   margin-bottom: 25px; }
 
+ul {
+  padding-left: inherit; }
+
+.faculty-background {
+  font-size: 1.1em; }
+
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.teaching {
+  margin-bottom: 25px; }
+
+.profile-info li {
+  line-height: 1.3em; }
+
+li a {
+  font-size: 1em; }
+
+p.panel-info {
+  font-weight: 300;
+  font-size: 1.2em; }
+
+.title-panel p.title-panel-info {
+  font-weight: 300;
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 1.1; }
+
+.fixed-column {
+  margin-top: -10px; }
+
+.student-work h4 {
+  font-weight: 300;
+  margin-bottom: 20px; }
+
+li a .course-code, .course-code:visited, .course-code:hover, .course-code:active {
+  font-size: 1.1em;
+  font-weight: 300;
+  text-decoration: none; }
+
+.modal-row {
+  margin-top: -10px; }
+
 .student-panel .panel-info {
   text-transform: lowercase; }
 
