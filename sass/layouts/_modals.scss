@@ -32,7 +32,7 @@
 
 .top-modal-row {
   margin-top: 75px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 /* Profile Modals */
@@ -164,11 +164,15 @@
   font-weight: $sans_light;
 }
 
-.where-who-container .faq-description-text {
+.where-who-container .faq-description-text, .where-who-container-2 .faq-description-text {
   font-family: $font_sans;
   font-weight: $sans_light;
   color: $dark_gray;
   font-size: 0.9em;
+}
+
+.where-who-container-2 {
+  margin-top: 40px;
 }
 
 .faq-right-column {
@@ -198,4 +202,19 @@
 .student-work-image {
   max-width: 80%;
   margin: 0 auto;
+}
+
+.faq-modal-2 {
+  padding-right: 9.333333333%;
+}
+
+.modal-fade-image {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.modal-fade-image img {
+  opacity: 1;
+  transition: 3s;
 }

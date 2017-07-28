@@ -2837,7 +2837,7 @@ main .container {
 
 .top-modal-row {
   margin-top: 75px;
-  margin-bottom: 25px; }
+  margin-bottom: 50px; }
 
 /* Profile Modals */
 .profile-image {
@@ -2943,11 +2943,14 @@ main .container {
   font-family: "Overpass", sans-serif;
   font-weight: 300; }
 
-.where-who-container .faq-description-text {
+.where-who-container .faq-description-text, .where-who-container-2 .faq-description-text {
   font-family: "Overpass", sans-serif;
   font-weight: 300;
   color: gray;
   font-size: 0.9em; }
+
+.where-who-container-2 {
+  margin-top: 40px; }
 
 .faq-right-column {
   position: relative; }
@@ -2973,6 +2976,18 @@ main .container {
 .student-work-image {
   max-width: 80%;
   margin: 0 auto; }
+
+.faq-modal-2 {
+  padding-right: 9.333333333%; }
+
+.modal-fade-image {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.modal-fade-image img {
+  opacity: 1;
+  transition: 3s; }
 
 /* Colors for info page icons */
 .cls-green {
