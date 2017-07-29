@@ -2973,6 +2973,12 @@ main .container {
   padding-right: 25px;
   padding-top: 0px; }
 
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
+
 .student-work-image {
   max-width: 80%;
   margin: 0 auto; }
@@ -2999,11 +3005,13 @@ main .container {
 
 .modal-fade-image-caption {
   opacity: 1;
-  transition: 3s; }
+  transition: 3s;
+  padding-right: 15px; }
 
 .modal-fade-image-caption-2 {
   opacity: 0;
-  transition: 3s; }
+  transition: 3s;
+  padding-right: 15px; }
 
 /* Colors for info page icons */
 .cls-green {

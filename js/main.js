@@ -90,6 +90,12 @@ $(document).ready(function(){
   });
 
   // FAQ Modals
+  function showWhereWho(hyphenedName) {
+    setTimeout(function(){
+      $("#" + hyphenedName + " .where-who-container").addClass("animated fadeIn");
+    }, 1000);
+  }
+
   $(".faq-panel").click(function(){
     var hyphenedName = $(this).attr('id').replace('-panel', '');
     closeAllModals();
@@ -102,6 +108,9 @@ $(document).ready(function(){
       $("#" + hyphenedName).css("width", "inherit");
     }
     $("#" + hyphenedName).css("opacity", "1");
+
+    $("#" + hyphenedName + " .where-who-container").css("opacity", "0");
+    showWhereWho(hyphenedName);
   });
 
   // Images fading in and out on some FAQ modals
