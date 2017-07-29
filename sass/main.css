@@ -2892,7 +2892,7 @@ main .container {
   font-size: 1.1em; }
 
 .student-info .sans-body {
-  font-size: 0.9em;
+  font-size: 1em;
   color: gray; }
 
 .profile-info .row li .fa {
@@ -3149,6 +3149,13 @@ li a .course-code, .course-code:visited, .course-code:hover, .course-code:active
 
 .student-panel .panel-info {
   text-transform: lowercase; }
+
+a.social-link {
+  font-size: 1em;
+  color: #377ab7; }
+
+a.blue-link {
+  font-size: 1em; }
 
 /* Be mindful of load order, especially here */
 @media (min-width: 1800px) {
