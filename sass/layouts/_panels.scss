@@ -18,6 +18,7 @@
 }
 
 .panel, .faculty-panel, .info-icon {
+  border: $border;
   height: 296px;
   cursor: pointer;
 }
@@ -262,13 +263,13 @@ background-color: $light_blue;
 //   @include flexcolumn;
 // }
 
-#fj-panel {
+#graphic-design-panel {
   height:66.666666666%;
   position: relative;
 }
 
 @media (max-width: 992px){
-  .sub-rows .row #fj-panel {
+  .sub-rows .row #graphic-design-panel {
     height: 100%;
   }
 

@@ -113,6 +113,36 @@ $(document).ready(function(){
     showWhereWho(hyphenedName);
   });
 
+  // JavaScript Animation Manipulation
+  var speed = 15;
+  $(".speed-up").click(function(){
+    speed = speed + 1;
+    if (speed > 25) { speed = 25; }
+    $(".rotate").css("animation", "rotate " + String(speed) + "s linear infinite");
+    $(".speed-variable").html(String(speed));
+  });
+
+  $(".speed-down").click(function(){
+    speed = speed - 1;
+    if (speed < 1) { speed = 1; }
+    $(".rotate").css("animation", "rotate " + String(speed) + "s linear infinite");
+    $(".speed-variable").html(String(speed));
+  });
+
+  var size = 75;
+  $(".size-up").click(function(){
+    size = size + 5;
+    if (size > 100) { size = 100; }
+    $(".rotate").css("max-width", String(size) + "%");
+    $(".size-variable").html(String(size));
+  });
+
+  $(".size-down").click(function(){
+    size = size - 5;
+    if (size < 10) { size = 10; }
+    $(".rotate").css("max-width", String(size) + "%");
+    $(".size-variable").html(String(size));
+  });
   // Images fading in and out on some FAQ modals
   var hide = false;
   setInterval(function(){
@@ -284,41 +314,41 @@ $(document).ready(function(){
 
   // SVG Icon animations
   // Some animations use the svg morpheus library
-  // if (infoPage) { // Only load if on information page
-  //   // Create new SVGMorpheus object
-  //   var labSchedule = new SVGMorpheus('#lab-schedule');
-  //   $("#lab-schedule").hover(function(){
-  //       // The .to method is from the svg-morpheus.js library
-  //       labSchedule.to('lab-schedule-hover', {
-  //         easing: 'sine-in-out',
-  //         duration: 800,
-  //         rotation: 'none'
-  //       });
-  //     },
-  //     function (){
-  //       labSchedule.to('lab-schedule-no-hover', {
-  //         easing: 'sine-in-out',
-  //         duration: 800,
-  //         rotation: 'none'
-  //       });
-  //   });
-  //
-  //   var importantInfo = new SVGMorpheus('#important-info');
-  //   $("#important-info").hover(function(){
-  //       importantInfo.to('important-info-hover', {
-  //         easing: 'sine-in-out',
-  //         duration: 800,
-  //         rotation: 'none'
-  //       });
-  //     },
-  //     function (){
-  //       importantInfo.to('important-info-no-hover', {
-  //         easing: 'sine-in-out',
-  //         duration: 800,
-  //         rotation: 'none'
-  //       });
-  //   });
-  // }
+  if (infoPage) { // Only load if on information page
+    // Create new SVGMorpheus object
+    var labSchedule = new SVGMorpheus('#lab-schedule');
+    $("#lab-schedule").hover(function(){
+        // The .to method is from the svg-morpheus.js library
+        labSchedule.to('lab-schedule-hover', {
+          easing: 'sine-in-out',
+          duration: 800,
+          rotation: 'none'
+        });
+      },
+      function (){
+        labSchedule.to('lab-schedule-no-hover', {
+          easing: 'sine-in-out',
+          duration: 800,
+          rotation: 'none'
+        });
+    });
+
+    var importantInfo = new SVGMorpheus('#important-info');
+    $("#important-info").hover(function(){
+        importantInfo.to('important-info-hover', {
+          easing: 'sine-in-out',
+          duration: 800,
+          rotation: 'none'
+        });
+      },
+      function (){
+        importantInfo.to('important-info-no-hover', {
+          easing: 'sine-in-out',
+          duration: 800,
+          rotation: 'none'
+        });
+    });
+  }
 
   var bigFJs = $(".big-fj");
   var smallFJs = $(".small-fj");
@@ -344,7 +374,7 @@ $(document).ready(function(){
     smallAttributes.push(getAttrs(smallFJs[i]));
   }
 
-  $("#fj-panel").hover(function(){
+  $("#graphic-design-panel").hover(function(){
     for (i = 0; i < smallFJs.length; i++){
       $(smallFJs[i]).attr("x", bigAttributes[i][0]);
       $(smallFJs[i]).attr("y", bigAttributes[i][1]);
