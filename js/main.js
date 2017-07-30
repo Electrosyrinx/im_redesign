@@ -1,15 +1,12 @@
 $(document).ready(function(){
 
-  // Load Navbar
-  // This allows the developer to not have to constantly edit every single page
-  // every time the pesky designers and project managers tell them to change it.
-  // Did I say pesky? I meant perky. It was a typo. Yeah, perky!
-  // This if/else loads the desktop navbar if the device width is > 820px,
-  // otherwise it loads the mobile navbar.
+  // Responsive navbars
   if (window.matchMedia('(max-width: 820px)').matches) {
-    loadMobileBar();
+    $("#desktop-nav").hide();
+    $("#mobile-nav").show();
   } else {
-    loadDesktopBar();
+    $("#mobile-nav").hide();
+    $("#desktop-nav").show();
   }
 
   // Stops fixed hidden elements in modals from interfering with visible page
@@ -22,9 +19,11 @@ $(document).ready(function(){
   // to the mobile navbar when the user makes the browser small enough.
   $(window).resize(function(){
     if (window.matchMedia('(max-width: 820px)').matches) {
-      loadMobileBar();
+      $("#desktop-nav").hide();
+      $("#mobile-nav").show();
     } else {
-      loadDesktopBar();
+      $("#mobile-nav").hide();
+      $("#desktop-nav").show();
     }
 
     if (window.matchMedia('(max-width: 767px)').matches) {
@@ -349,14 +348,6 @@ $(document).ready(function(){
 });
 
 // Functions
-
-function loadDesktopBar() {
-  $('#navbar').load('partials/desktop-navigation.html');
-}
-
-function loadMobileBar() {
-  $('#navbar').load('partials/mobile-navigation.html');
-}
 
 function loadPortfolio(hyphenedName) {
   $('.works-' + hyphenedName).load('partials/' + hyphenedName + '.html');
