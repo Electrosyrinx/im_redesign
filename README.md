@@ -5,21 +5,24 @@ A website redesign for the Interactive Media program at North Island College
 Libraries include:
 * Bootstrap 3
 * Font Awesome
+* Ekko Lightbox
+* Animate.css
 
 ### JavaScript
 Libraries include:
 * jQuery
 * jQuery UI
 * Bootstrap 3
+* SVG Morpheus
+* Ekko Lightbox
 
 ### Fonts
 Fonts include:
 * Glyphicons
 * Font Awesome Icons
-* TODO: Select fonts and modify css/main.css accordingly
+* Overpass (Google Fonts)
+* Crimson Text (Google Fonts)
 
 ### Partials
 These elements are loaded in js/main.js. There are partials for:
-* Meta tags
-* Navigation (Desktop and Mobile)
-* Footer (if needed)
+* Student Portfolios
