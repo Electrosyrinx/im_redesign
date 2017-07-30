@@ -321,11 +321,15 @@ $(document).ready(function(){
       }
 
       var current_location = window.location.pathname;
+      console.log(current_location);
       switch(current_location) {
         case "/how-we-made-this.html":
             $(".how-we-made-this").addClass("active");
             break;
         case "/index.html":
+            $(".what-we-do").addClass("active");
+            break;
+        case "/":
             $(".what-we-do").addClass("active");
             break;
         case "/students-alumni.html":
