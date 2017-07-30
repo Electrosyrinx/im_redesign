@@ -3032,6 +3032,10 @@ main .container {
   margin: 0 auto;
   margin-top: 35px; }
 
+#javascript-interaction .sans-body {
+  font-size: 0.8em;
+  font-weight: 300; }
+
 @-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(360deg);
