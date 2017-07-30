@@ -32,7 +32,8 @@
 
 .top-modal-row.row {
   position: fixed;
-  width: 100%;
+  width: inherit;
+  border-right: $border;
   background-color: $white;
   padding-top: 40px;
   padding-bottom: 15px;
@@ -101,6 +102,10 @@
   width: 100%;
   border-width: 1px;
   border-color: $dark_blue;
+}
+
+.profile-info {
+  margin-top: 14px;
 }
 
 .student-info p {
