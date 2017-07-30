@@ -2538,9 +2538,11 @@ main .container {
   font-weight: 300; }
 
 .panel, .faculty-panel, .info-icon {
-  border: 1px solid #e7e7e7;
   height: 296px;
   cursor: pointer; }
+
+.info-icon {
+  border: 1px solid #e7e7e7; }
 
 .faculty-panel {
   opacity: 1; }

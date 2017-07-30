@@ -18,9 +18,12 @@
 }
 
 .panel, .faculty-panel, .info-icon {
-  border: $border;
   height: 296px;
   cursor: pointer;
+}
+
+.info-icon {
+  border: $border;
 }
 
 .faculty-panel {
