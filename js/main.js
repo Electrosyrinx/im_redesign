@@ -163,64 +163,18 @@ $(document).ready(function(){
 
 
   // Info Page Modals
-  $(".lab-schedule").click(function(){
+  $(".info-icon").click(function(){
+    var hyphenedName = $(this).attr('id').replace('-panel', '');
     closeAllModals();
+    // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#lab-schedule-modal").css("width", "100%");
+      // When closed, the width of the modal is 0px, ie, invisible. When the
+      // width is increased, the modal becomes visible
+      $("#" + hyphenedName).css("width", "100%");
     } else {
-      $("#lab-schedule-modal").css("width", "inherit");
+      $("#" + hyphenedName).css("width", "inherit");
     }
-    $("#lab-schedule-modal").css("opacity", "1");
-  });
-
-  $(".print-shop").click(function(){
-    closeAllModals();
-    if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#print-shop-modal").css("width", "100%");
-    } else {
-      $("#print-shop-modal").css("width", "inherit");
-    }
-    $("#print-shop-modal").css("opacity", "1");
-  });
-
-  $(".equipment").click(function(){
-    closeAllModals();
-    if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#equipment-modal").css("width", "100%");
-    } else {
-      $("#equipment-modal").css("width", "inherit");
-    }
-    $("#equipment-modal").css("opacity", "1");
-  });
-
-  $(".tech-specs").click(function(){
-    closeAllModals();
-    if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#tech-specs-modal").css("width", "100%");
-    } else {
-      $("#tech-specs-modal").css("width", "inherit");
-    }
-    $("#tech-specs-modal").css("opacity", "1");
-  });
-
-  $(".ftp-access").click(function(){
-    closeAllModals();
-    if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#ftp-access-modal").css("width", "100%");
-    } else {
-      $("#ftp-access-modal").css("width", "inherit");
-    }
-    $("#ftp-access-modal").css("opacity", "1");
-  });
-
-  $(".important-info").click(function(){
-    closeAllModals();
-    if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#important-info-modal").css("width", "100%");
-    } else {
-      $("#important-info-modal").css("width", "inherit");
-    }
-    $("#important-info-modal").css("opacity", "1");
+    $("#" + hyphenedName).css("opacity", "1");
   });
 
   /* Move to next modal */
@@ -270,39 +224,6 @@ $(document).ready(function(){
     }
   });
 
-  // Open Modal on Modal
-  $(".matt-boucher-modal").click(function(){
-    // Responsive sizing
-    if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#matt-boucher-images").css("width", "100%");
-    } else {
-      $("#matt-boucher-images").css("width", "inherit");
-    }
-    $("#matt-boucher-images").css("opacity", "1");
-  });
-
-  // Open Modal on Modal
-  $(".brittany-king-modal").click(function(){
-    // Responsive sizing
-    if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#brittany-king-images").css("width", "100%");
-    } else {
-      $("#brittany-king-images").css("width", "inherit");
-    }
-    $("#brittany-king-images").css("opacity", "1");
-  });
-
-  // Open Modal on Modal
-  $(".krista-mcallister-modal").click(function(){
-    // Responsive sizing
-    if (window.matchMedia('(max-width: 820px)').matches) {
-      $("#krista-mcallister-images").css("width", "100%");
-    } else {
-      $("#krista-mcallister-images").css("width", "inherit");
-    }
-    $("#krista-mcallister-images").css("opacity", "1");
-  });
-
   // Modal close buttons
   $(".modal-closebtn").click(function(){
     closeAllModals();
@@ -316,8 +237,8 @@ $(document).ready(function(){
   // Some animations use the svg morpheus library
   if (infoPage) { // Only load if on information page
     // Create new SVGMorpheus object
-    var labSchedule = new SVGMorpheus('#lab-schedule');
-    $("#lab-schedule").hover(function(){
+    var labSchedule = new SVGMorpheus('#lab-schedule-svg');
+    $("#lab-schedule-svg").hover(function(){
         // The .to method is from the svg-morpheus.js library
         labSchedule.to('lab-schedule-hover', {
           easing: 'sine-in-out',
@@ -333,8 +254,8 @@ $(document).ready(function(){
         });
     });
 
-    var importantInfo = new SVGMorpheus('#important-info');
-    $("#important-info").hover(function(){
+    var importantInfo = new SVGMorpheus('#important-info-svg');
+    $("#important-info-svg").hover(function(){
         importantInfo.to('important-info-hover', {
           easing: 'sine-in-out',
           duration: 800,
