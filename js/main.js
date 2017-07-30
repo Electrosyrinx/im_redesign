@@ -112,11 +112,14 @@ $(document).ready(function(){
     showWhereWho(hyphenedName);
   });
 
-  // JavaScript Animation Manipulation
+    // JavaScript Animation Manipulation
   var speed = 15;
   $(".speed-up").click(function(){
     speed = speed + 1;
     if (speed > 25) { speed = 25; }
+    $(".rotate").css("-webkit-animation", "rotate " + String(speed) + "s linear infinite");
+    $(".rotate").css("-moz-animation", "rotate " + String(speed) + "s linear infinite");
+    $(".rotate").css("-o-animation", "rotate " + String(speed) + "s linear infinite");
     $(".rotate").css("animation", "rotate " + String(speed) + "s linear infinite");
     $(".speed-variable").html(String(speed));
   });
@@ -124,6 +127,9 @@ $(document).ready(function(){
   $(".speed-down").click(function(){
     speed = speed - 1;
     if (speed < 1) { speed = 1; }
+    $(".rotate").css("-webkit-animation", "rotate " + String(speed) + "s linear infinite");
+    $(".rotate").css("-moz-animation", "rotate " + String(speed) + "s linear infinite");
+    $(".rotate").css("-o-animation", "rotate " + String(speed) + "s linear infinite");
     $(".rotate").css("animation", "rotate " + String(speed) + "s linear infinite");
     $(".speed-variable").html(String(speed));
   });

@@ -30,9 +30,17 @@
   color: $white;
 }
 
-.top-modal-row {
-  margin-top: 75px;
-  margin-bottom: 50px;
+.top-modal-row.row {
+  position: fixed;
+  width: 100%;
+  background-color: $white;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  z-index: 1000;
+}
+
+.modal-row {
+  margin-top: 90px;
 }
 
 /* Profile Modals */
