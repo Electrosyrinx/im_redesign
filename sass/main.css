@@ -3419,7 +3419,10 @@ a.blue-link {
     height: 300px; }
 
   fixed-column {
-    display: block; } }
+    display: block; }
+
+  .slide-modal {
+    padding-bottom: 260px; } }
 /* Fix column shifting issue with current-students.html */
 @media (max-width: 560px) {
   .info-icon h3 {
