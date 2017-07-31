@@ -8,6 +8,10 @@
 	color: gray;
 }
 
+#current-students-info .title-panel-info {
+  color: white;
+}
+
 #current-students-info li {
 	font-size: 1.2em;
 }

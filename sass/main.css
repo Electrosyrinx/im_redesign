@@ -2548,6 +2548,9 @@ main .container {
   height: 296px;
   cursor: pointer; }
 
+.info-icon .title-panel-info {
+  color: #ffffff; }
+
 .info-icon {
   border: 1px solid #e7e7e7; }
 
@@ -2906,7 +2909,7 @@ main .container {
   font-weight: 300; }
 
 .profile-info {
-  top: -15px; }
+  top: -45px; }
 
 .profile-info a, .profile-info li {
   color: gray;
@@ -2956,6 +2959,9 @@ main .container {
 
 .student-info .sans-body, .profile-info .sans-body {
   font-weight: 300; }
+
+.student-info.profile-info {
+  top: -30px; }
 
 /* Index modals */
 .faq-modal h2, .faq-modal h3 {
@@ -3112,6 +3118,9 @@ main .container {
 
 #html-css-example h2 {
   text-align: left; }
+
+.info-right-column {
+  margin-top: 15px; }
 
 .ekko-lightbox-nav-overlay a span {
   font-size: 2em;
@@ -3284,8 +3293,7 @@ a.blue-link {
   padding-right: 20px; }
 
 #how-we-made-this .panel-info {
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.6); }
+  color: #ffffff; }
 
 #how-we-made-this .title-panel-info {
   color: #ffffff; }
@@ -3434,7 +3442,19 @@ a.blue-link {
   .info-icon svg {
     max-height: 60%;
     margin: 10px;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+
+  .top-modal-row.row {
+    padding-top: 60px; }
+
+  #mobile-nav {
+    position: static; }
+
+  main {
+    padding-top: 20px; }
+
+  .slide-modal {
+    margin-top: 60px; } }
 @media (max-width: 370px) {
   /* Nav */
   .navbar-brand {
@@ -3470,10 +3490,10 @@ a.blue-link {
     font-size: 1em; }
 
   main {
-    padding-top: 110px; }
+    padding-top: 20px; }
 
   .slide-modal {
-    margin-top: 160px; }
+    margin-top: 60px; }
 
   .dropdown-menu li a {
     font-size: 0.7em !important; }
@@ -3487,6 +3507,12 @@ a.blue-link {
 
   main .info-icon-container .row {
     padding: 0px 0px;
-    padding-top: 65px; } }
+    padding-top: 15px; }
+
+  main .container {
+    padding-top: 15px; }
+
+  .slide-modal {
+    margin-top: 0px; } }
 
 /*# sourceMappingURL=main.css.map */
