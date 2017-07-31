@@ -2885,6 +2885,7 @@ main .container {
   padding-left: 20%; }
 
 .profile-label h2, .profile-label h4 {
+  text-transform: lowercase;
   color: #ffffff;
   margin: 0px; }
 
