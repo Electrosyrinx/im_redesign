@@ -33,21 +33,11 @@ $(document).ready(function(){
     }
   });
 
-  // Panel Hover Animations
-  // This turns the duotoned images on students-alumni.html into grayscale by
-  // toggling a class with the grayscale CSS rules.
-  // See section 3b. in css/main.css
-  $(".panel").hover(function(){
-    $(".panel-info", this).toggleClass("panel-info-visible");
-  });
-
   /* Modals */
   /* Move to next modal */
   $(".next-modal").click(function(){
     closeAllModals();
     $next = $(this).parentsUntil(".slide-modal").last().parent().next();
-    console.log($next);
-    loadPortfolio($next.attr('id'));
     if (window.matchMedia('(max-width: 820px)').matches) {
       $next.css("width", "100%");
     } else {
@@ -70,7 +60,6 @@ $(document).ready(function(){
   $(".prev-modal").click(function(){
     closeAllModals();
     $prev = $(this).parentsUntil(".slide-modal").last().parent().prev();
-    loadPortfolio($prev.attr('id'));
     // Responsive sizing
     if (window.matchMedia('(max-width: 820px)').matches) {
       $prev.css("width", "100%");

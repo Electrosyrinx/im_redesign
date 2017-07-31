@@ -2600,8 +2600,22 @@ main .container {
   white-space: nowrap;
   overflow: hidden; }
 
-.panel-info-visible {
+.panel-info .fa {
+  color: #ffffff;
+  margin-left: 5px;
+  top: 10px;
+  position: absolute; }
+
+.panel:hover .panel-info {
   padding: 8px 15px;
+  padding-right: 25px;
+  width: auto;
+  transition: .8s;
+  -webkit-transition: .8s; }
+
+.faculty-panel .panel-info {
+  padding: 8px 15px;
+  padding-right: 25px;
   width: auto;
   transition: .8s;
   -webkit-transition: .8s; }
@@ -3249,6 +3263,31 @@ a.social-link {
 a.blue-link {
   font-size: 1em; }
 
+#how-we-made-this h1 {
+  font-weight: 800;
+  color: #377ab7; }
+
+#how-we-made-this .about h3 {
+  font-weight: 600;
+  color: #377ab7; }
+
+#how-we-made-this p {
+  color: gray;
+  font-size: 1.1em; }
+
+.about {
+  padding-right: 20px; }
+
+#how-we-made-this .panel-info {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6); }
+
+#how-we-made-this .title-panel-info {
+  color: #ffffff; }
+
+#how-we-made-this .faculty-panel {
+  cursor: default; }
+
 /* Be mindful of load order, especially here */
 @media (min-width: 1800px) {
   .fixed-column {
@@ -3321,7 +3360,10 @@ a.blue-link {
     font-size: 0.6em; }
 
   .fixed-column {
-    width: 370px; } }
+    width: 370px; }
+
+  #how-we-made-this .faculty-panel {
+    max-height: 228px; } }
 @media (max-width: 820px) {
   /* Nav */
   .nav-item, .list-nav-item {
@@ -3355,14 +3397,7 @@ a.blue-link {
     padding-top: 25px; }
 
   .navbar-brand-words {
-    font-size: 0.9em; }
-
-  .blue-icon {
-    color: #377ab7;
-    font-size: 10px;
-    margin-left: inherit;
-    bottom: 6px;
-    position: absolute; } }
+    font-size: 0.9em; } }
 @media (max-width: 767px) {
   .fixed-column {
     position: inherit; }

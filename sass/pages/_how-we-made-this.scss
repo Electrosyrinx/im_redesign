@@ -1,0 +1,31 @@
+#how-we-made-this h1 {
+  font-weight: $sans_extrabold;
+  color: $dark_blue;
+}
+
+#how-we-made-this .about h3 {
+  font-weight: $sans_bold;
+  color: $dark_blue;
+}
+
+#how-we-made-this p {
+  color: $dark_gray;
+  font-size: 1.1em;
+}
+
+.about {
+  padding-right: 20px;
+}
+
+#how-we-made-this .panel-info {
+  color: $white;
+  background: rgba(0,0,0,0.6);
+}
+
+#how-we-made-this .title-panel-info {
+  color: $white;
+}
+
+#how-we-made-this .faculty-panel {
+  cursor: default;
+}

@@ -84,8 +84,24 @@
   overflow: hidden;
 }
 
-.panel-info-visible {
+.panel-info .fa {
+  color: $white;
+  margin-left: 5px;
+  top: 10px;
+  position: absolute;
+}
+
+.panel:hover .panel-info {
   padding: 8px 15px;
+  padding-right: 25px;
+  width: auto;
+  transition: .8s;
+  -webkit-transition: .8s;
+}
+
+.faculty-panel .panel-info {
+  padding: 8px 15px;
+  padding-right: 25px;
   width: auto;
   transition: .8s;
   -webkit-transition: .8s;

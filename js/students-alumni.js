@@ -23,6 +23,17 @@ $(document).ready(function(){
       $(".fixed-column-tag").addClass("fixed-column");
     }
   });
+
+  $(".next-modal").click(function(){
+    $next = $(this).parentsUntil(".slide-modal").last().parent().next();
+    loadPortfolio($next.attr('id'));
+  });
+
+
+  $(".prev-modal").click(function(){
+    $prev = $(this).parentsUntil(".slide-modal").last().parent().prev();
+    loadPortfolio($prev.attr('id'));
+  });
 });
 
 function loadPortfolio(hyphenedName) {

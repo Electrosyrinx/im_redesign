@@ -18,6 +18,7 @@ $ sass main.scss main.css
 @import "pages/faculty";
 @import "pages/students-alumni";
 @import "pages/what-we-do";
+@import "pages/how-we-made-this";
 /* Be mindful of load order, especially here */
 @import "responsive/responsive-gt-1800";
 @import "responsive/responsive-gt-1500";
