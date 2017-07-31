@@ -3165,6 +3165,9 @@ main .container {
 .info-icon-container .row {
   padding: 0px 70px; }
 
+.info-icon-container .top-modal-row {
+  padding-top: 40px; }
+
 .info-icon {
   padding-bottom: 0px;
   overflow: hidden; }
