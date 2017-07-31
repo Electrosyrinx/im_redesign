@@ -2957,6 +2957,7 @@ main .container {
 .student-info .sans-body, .profile-info .sans-body {
   font-weight: 300; }
 
+/* Index modals */
 .faq-modal h2, .faq-modal h3 {
   text-transform: lowercase;
   color: #377ab7;
